@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Lodge Complaint{% endblock %}
+{% block content %}
+  <h1>Lodge a complaint</h1>
+  <p>Tell us what the problem is and where it is. You will get a Complaint ID to track it.</p>
+
+  <div id="login-warning" hidden>
+    <p><strong>Please log in to lodge a complaint.</strong></p>
+  </div>
+
+  <div id="success" class="alert alert-success" role="status" hidden>
+    Complaint submitted. Your Complaint ID is <strong id="new-id"></strong>.
+    You can follow it under
+    <a href="{{ url_for('web.my_complaints') }}">My Complaints</a>.
+  </div>
+
+  <div id="form-error" class="alert alert-error" role="alert" hidden></div>
+
+  <section id="lodge-section" class="card">
+    <form id="lodge-form" novalidate>
+      <label for="category">Category</label>
+      <select id="category" name="category">
+        <option value="">Select a category</option>
+        <option>Sanitation</option>
+        <option>Roads</option>
+        <option>Water Supply</option>
+        <option>Street Lighting</option>
+        <option>Noise</option>
+        <option>Other</option>
+      </select>
+      <p class="field-error" id="error-category"></p>
+
+      <label for="location">Location</label>
+      <input id="location" name="location" type="text" maxlength="255"
+             placeholder="5th Cross Road, Sector 4">
+      <p class="field-error" id="error-location"></p>
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description"
+                placeholder="Describe the problem"></textarea>
+      <p class="field-error" id="error-description"></p>
+
+      <button id="submit-btn" type="submit">Submit complaint</button>
+    </form>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/lodge.js') }}"></script>
+{% endblock %}

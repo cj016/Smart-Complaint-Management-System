@@ -13,6 +13,11 @@ def ui_kit():
     return render_template("ui_kit.html")
 
 
+@bp.get("/lodge")
+def lodge():
+    return render_template("lodge.html")
+
+
 @bp.get("/my-complaints")
 def my_complaints():
     return render_template("my_complaints.html")
