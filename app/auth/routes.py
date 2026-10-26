@@ -1,6 +1,8 @@
 import secrets
 from datetime import timedelta
 
+from .decorators import roles_required
+
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import create_access_token
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -121,3 +123,15 @@ def login():
     token = create_access_token(
         identity=str(user.id), additional_claims={"role": user.role})
     return jsonify(access_token=token, role=user.role), 200
+
+
+@bp.get("/admin-check")
+@roles_required(Role.ADMIN)
+def admin_check():
+    return jsonify(message="admin ok")
+
+
+@bp.get("/staff-check")
+@roles_required(Role.OFFICER, Role.ADMIN)
+def staff_check():
+    return jsonify(message="staff ok")
