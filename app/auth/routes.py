@@ -12,6 +12,8 @@ from ..utils import utcnow
 bp = Blueprint("auth", __name__)
 
 OTP_MINUTES = 10
+MAX_ATTEMPTS = 5
+LOCK_MINUTES = 15  # use the SRS value
 
 
 @bp.get("/ping")
@@ -97,8 +99,22 @@ def login():
     email = (data.get("email") or "").strip().lower()
     user = User.query.filter_by(email=email).first()
 
+    if user and user.locked_until and user.locked_until > utcnow():
+        return jsonify(error="Account locked. Try again later."), 423
+
     if not user or not user.check_password(data.get("password") or ""):
+        if user:
+            user.failed_login_count += 1
+            if user.failed_login_count >= MAX_ATTEMPTS:
+                user.locked_until = utcnow() + timedelta(minutes=LOCK_MINUTES)
+                user.failed_login_count = 0
+            db.session.commit()
         return jsonify(error="Invalid email or password"), 401
+
+    user.failed_login_count = 0
+    user.locked_until = None
+    db.session.commit()
+
     if not user.is_verified:
         return jsonify(error="Please verify your account first"), 403
 
