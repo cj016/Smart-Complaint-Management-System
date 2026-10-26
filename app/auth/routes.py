@@ -2,6 +2,7 @@ import secrets
 from datetime import timedelta
 
 from flask import Blueprint, jsonify, request
+from flask_jwt_extended import create_access_token
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from ..extensions import db
@@ -88,3 +89,19 @@ def resend_otp():
     if user and not user.is_verified:
         _issue_otp(user)
     return jsonify(message="If the account exists, a new OTP was sent."), 200
+
+
+@bp.post("/login")
+def login():
+    data = request.get_json(silent=True) or {}
+    email = (data.get("email") or "").strip().lower()
+    user = User.query.filter_by(email=email).first()
+
+    if not user or not user.check_password(data.get("password") or ""):
+        return jsonify(error="Invalid email or password"), 401
+    if not user.is_verified:
+        return jsonify(error="Please verify your account first"), 403
+
+    token = create_access_token(
+        identity=str(user.id), additional_claims={"role": user.role})
+    return jsonify(access_token=token, role=user.role), 200
