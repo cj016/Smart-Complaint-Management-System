@@ -2,5 +2,45 @@
 {% block title %}My Complaints{% endblock %}
 {% block content %}
   <h1>My Complaints</h1>
-  <p>Placeholder - this page is built by SCMS-F021.</p>
+
+  <div id="login-warning" hidden>
+    <p><strong>Please log in to see your complaints.</strong></p>
+  </div>
+
+  <section id="complaints-section" hidden>
+    <label for="status-filter">Filter by status</label>
+    <select id="status-filter">
+      <option value="">All</option>
+      <option>Submitted</option>
+      <option>In Review</option>
+      <option>Assigned</option>
+      <option>In Progress</option>
+      <option>Resolved</option>
+      <option>Closed</option>
+      <option>Reopened</option>
+    </select>
+
+    <p id="message" role="status"></p>
+
+    <div style="overflow-x:auto">
+      <table id="complaints-table">
+        <thead>
+          <tr>
+            <th>Complaint ID</th><th>Category</th><th>Location</th>
+            <th>Status</th><th>Submitted</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div>
+      <button id="prev-btn" type="button">Previous</button>
+      <span id="page-info"></span>
+      <button id="next-btn" type="button">Next</button>
+    </div>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/my_complaints.js') }}"></script>
 {% endblock %}
