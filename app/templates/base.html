@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}SCMS{% endblock %} - Smart Complaint Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ url_for('web.index') }}">SCMS</a>
+    <nav>
+      <a href="{{ url_for('web.index') }}">Home</a>
+      <a href="{{ url_for('web.my_complaints') }}">My Complaints</a>
+    </nav>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer">Smart Complaint Management System - Team 9</footer>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
