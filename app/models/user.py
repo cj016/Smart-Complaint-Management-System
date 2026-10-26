@@ -1,5 +1,6 @@
 from ..extensions import db
 from ..utils import utcnow
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class Role:
@@ -28,6 +29,12 @@ class User(db.Model):
         "Complaint", foreign_keys="Complaint.user_id", back_populates="complainant")
     assigned_complaints = db.relationship(
         "Complaint", foreign_keys="Complaint.assigned_to_id", back_populates="assignee")
+
+    def set_password(self, plain):
+        self.password_hash = generate_password_hash(plain)
+
+    def check_password(self, plain):
+        return check_password_hash(self.password_hash, plain)
 
     def __repr__(self):
         return f"<User {self.email} ({self.role})>"
