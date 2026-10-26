@@ -16,3 +16,8 @@ def ui_kit():
 @bp.get("/my-complaints")
 def my_complaints():
     return render_template("my_complaints.html")
+
+
+@bp.get("/track")
+def track():
+    return render_template("track.html")
