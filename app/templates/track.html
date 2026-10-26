@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Track Complaint{% endblock %}
+{% block content %}
+  <h1>Track a complaint</h1>
+  <p>Enter your Complaint ID (for example SCMS-2026-00042) to see its current status.</p>
+
+  <div id="login-warning" hidden>
+    <p><strong>Please log in to track a complaint.</strong></p>
+  </div>
+
+  <section id="track-section">
+    <div class="card">
+      <label for="complaint-id">Complaint ID</label>
+      <input id="complaint-id" type="text" placeholder="SCMS-2026-00042"
+             autocomplete="off" maxlength="20">
+      <p id="message" role="status" class="field-error"></p>
+      <button id="search-btn" type="button">Search</button>
+    </div>
+
+    <div id="result" class="card" hidden>
+      <h2 id="result-id"></h2>
+      <p><span id="result-status" class="badge"></span></p>
+      <dl>
+        <dt>Category</dt><dd id="result-category"></dd>
+        <dt>Location</dt><dd id="result-location"></dd>
+        <dt>Description</dt><dd id="result-description"></dd>
+        <dt>Priority</dt><dd id="result-priority"></dd>
+        <dt>Submitted</dt><dd id="result-created"></dd>
+        <dt>Last updated</dt><dd id="result-updated"></dd>
+      </dl>
+    </div>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/track.js') }}"></script>
+{% endblock %}
