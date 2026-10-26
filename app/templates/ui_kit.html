@@ -2,5 +2,54 @@
 {% block title %}UI Kit{% endblock %}
 {% block content %}
   <h1>UI Kit</h1>
-  <p>Placeholder - the responsive UI kit is added by SCMS-NF004.</p>
+  <p>Reusable components for every SCMS page. Resize the window from 360px to 1920px to check
+     the layout (test case TC-UX-01).</p>
+
+  <h2>Status badges</h2>
+  <p>
+    <span class="badge badge-submitted">Submitted</span>
+    <span class="badge badge-in-review">In Review</span>
+    <span class="badge badge-assigned">Assigned</span>
+    <span class="badge badge-in-progress">In Progress</span>
+    <span class="badge badge-resolved">Resolved</span>
+    <span class="badge badge-closed">Closed</span>
+    <span class="badge badge-reopened">Reopened</span>
+  </p>
+
+  <h2>Buttons and alerts</h2>
+  <p><a class="btn" href="#">Primary</a> <a class="btn btn-secondary" href="#">Secondary</a></p>
+  <div class="alert alert-info">Info message</div>
+  <div class="alert alert-success">Success message</div>
+  <div class="alert alert-error">Error message</div>
+
+  <h2>Form</h2>
+  <div class="card">
+    <div class="form-row">
+      <div>
+        <label for="kit-category">Category</label>
+        <select id="kit-category"><option>Sanitation</option><option>Roads</option></select>
+      </div>
+      <div>
+        <label for="kit-location">Location</label>
+        <input id="kit-location" type="text" placeholder="5th Cross Road, Sector 4">
+      </div>
+    </div>
+    <label for="kit-desc">Description</label>
+    <textarea id="kit-desc"></textarea>
+    <p class="field-error">Description is required.</p>
+    <button type="button">Submit</button>
+  </div>
+
+  <h2>Responsive table</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Complaint ID</th><th>Category</th><th>Location</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>SCMS-2026-00042</td><td>Sanitation</td><td>5th Cross Road, Sector 4</td>
+            <td><span class="badge badge-in-progress">In Progress</span></td></tr>
+        <tr><td>SCMS-2026-00043</td><td>Roads</td><td>Main Street</td>
+            <td><span class="badge badge-resolved">Resolved</span></td></tr>
+      </tbody>
+    </table>
+  </div>
 {% endblock %}
