@@ -5,6 +5,9 @@ Requires: Authorization: Bearer <JWT>  (identity = str(user.id), see docs/CONVEN
 
 SCMS-F-020: track one complaint by its Complaint ID.
 GET /api/v1/tracking/by-id/<complaint_id>
+
+SCMS-F-022: status timeline of one complaint (every status it has been through).
+GET /api/v1/tracking/by-id/<complaint_id>/timeline
 """
 import re
 
@@ -68,6 +71,46 @@ def track_by_id(complaint_id):
     data["description"] = complaint.description
     data["department"] = complaint.department
     return jsonify(data)
+
+
+@bp.get("/by-id/<complaint_id>/timeline")
+@jwt_required()
+def complaint_timeline(complaint_id):
+    """SCMS-F-022: the status timeline, oldest entry first.
+
+    Same visibility rule as track_by_id: owner, officer or admin; anyone else gets 404.
+    Each entry says who acted only by role (Complainant / Officer / Admin), so a
+    citizen never sees staff names.
+    """
+    complaint_id = complaint_id.strip().upper()
+    if not COMPLAINT_ID_FORMAT.match(complaint_id):
+        return error_response("VALIDATION_ERROR",
+                              "Complaint ID must look like SCMS-2026-00042.",
+                              {"field": "complaintId"}, 422)
+
+    user = db.session.get(User, int(get_jwt_identity()))
+    complaint = db.session.execute(
+        db.select(Complaint).where(Complaint.public_id == complaint_id)).scalar_one_or_none()
+
+    is_staff = user is not None and user.role in (Role.OFFICER, Role.ADMIN)
+    if complaint is None or user is None or not (is_staff or complaint.user_id == user.id):
+        return error_response("NOT_FOUND", "No complaint found with that ID.", status=404)
+
+    entries = sorted(complaint.history, key=lambda h: (h.changed_at, h.id))
+    steps = []
+    for entry in entries:
+        actor = db.session.get(User, entry.changed_by_id) if entry.changed_by_id else None
+        steps.append({
+            "status": entry.status,
+            "remarks": entry.remarks,
+            "changedAt": _iso(entry.changed_at),
+            "changedByRole": actor.role if actor else "System",
+        })
+    return jsonify({
+        "complaintId": complaint.public_id,
+        "currentStatus": complaint.status,
+        "steps": steps,
+    })
 
 
 @bp.get("/my-complaints")

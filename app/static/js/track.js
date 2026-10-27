@@ -17,6 +17,37 @@
     return status.toLowerCase().replace(/\s+/g, "-");
   }
 
+  function renderTimeline(steps) {
+    var list = document.getElementById("timeline");
+    list.innerHTML = "";
+    steps.forEach(function (step) {
+      var li = document.createElement("li");
+      var badge = document.createElement("span");
+      badge.className = "badge badge-" + slug(step.status);
+      badge.textContent = step.status;
+      var when = document.createElement("time");
+      when.dateTime = step.changedAt;
+      when.textContent = new Date(step.changedAt).toLocaleString();
+      li.appendChild(badge);
+      li.appendChild(when);
+      if (step.remarks) {
+        var note = document.createElement("p");
+        note.textContent = step.remarks; // textContent keeps this XSS-safe (SCMS-SR-003)
+        li.appendChild(note);
+      }
+      list.appendChild(li);
+    });
+  }
+
+  function loadTimeline(id, token) {
+    // SCMS-F-022: status timeline
+    fetch("/api/v1/tracking/by-id/" + encodeURIComponent(id) + "/timeline",
+          { headers: { Authorization: "Bearer " + token } })
+      .then(function (resp) { return resp.json(); })
+      .then(function (data) { if (data.steps) { renderTimeline(data.steps); } })
+      .catch(function () { /* the details above still show; timeline is optional */ });
+  }
+
   function show(c) {
     setText("result-id", c.complaintId);
     var badge = document.getElementById("result-status");
@@ -55,6 +86,7 @@
         if (!data) { return; }
         if (data.error) { message.textContent = data.error.message; return; }
         show(data);
+        loadTimeline(data.complaintId, token);
       })
       .catch(function () { message.textContent = "Could not search. Try again."; });
   }
