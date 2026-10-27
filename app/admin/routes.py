@@ -15,8 +15,10 @@ from sqlalchemy.orm import selectinload
 from ..auth.decorators import roles_required
 from ..errors import error_response
 from ..extensions import db
+
 from ..models import PRIORITIES, STATUSES, Complaint, Role, StatusHistory, User
-from .services import (ASSIGNABLE_STATUSES, AUTO_ASSIGN_FROM, SORT_COLUMNS, TRANSITIONS, build_dashboard_query)
+from .services import (ASSIGNABLE_STATUSES, AUTO_ASSIGN_FROM, SORT_COLUMNS,
+                       TRANSITIONS, build_dashboard_query)
 
 bp = Blueprint("admin", __name__)
 
