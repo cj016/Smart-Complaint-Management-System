@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block content %}
+  <h1>Admin dashboard</h1>
+
+  <div id="login-warning" hidden>
+    <p><strong>Please log in as an officer or admin to see this page.</strong></p>
+  </div>
+
+  <section id="dashboard-section" hidden>
+    <div class="filter-bar">
+      <div>
+        <label for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="">All</option>
+          <option>Sanitation</option>
+          <option>Roads</option>
+          <option>Water Supply</option>
+          <option>Street Lighting</option>
+          <option>Noise</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="priority-filter">Priority</label>
+        <select id="priority-filter">
+          <option value="">All</option>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+          <option>Critical</option>
+        </select>
+      </div>
+      <div>
+        <label for="status-filter">Status</label>
+        <select id="status-filter">
+          <option value="">All</option>
+          <option>Submitted</option>
+          <option>In Review</option>
+          <option>Assigned</option>
+          <option>In Progress</option>
+          <option>Resolved</option>
+          <option>Closed</option>
+          <option>Reopened</option>
+        </select>
+      </div>
+      <div>
+        <label for="sort-field">Sort by</label>
+        <select id="sort-field">
+          <option value="created_at">Date submitted</option>
+          <option value="updated_at">Last updated</option>
+          <option value="priority">Priority</option>
+          <option value="status">Status</option>
+          <option value="category">Category</option>
+        </select>
+      </div>
+      <div>
+        <label for="sort-order">Order</label>
+        <select id="sort-order">
+          <option value="desc">Newest / highest first</option>
+          <option value="asc">Oldest / lowest first</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="message" role="status"></p>
+
+    <div class="table-wrap">
+      <table id="complaints-table">
+        <thead>
+          <tr>
+            <th>Complaint ID</th><th>Category</th><th>Location</th><th>Priority</th>
+            <th>Status</th><th>Assigned to</th><th>Submitted</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div>
+      <button id="prev-btn" type="button">Previous</button>
+      <span id="page-info"></span>
+      <button id="next-btn" type="button">Next</button>
+    </div>
+
+    <section id="manage-panel" class="card manage-panel" hidden>
+      <h2 id="manage-title">Manage complaint</h2>
+
+      <form id="assign-form">
+        <h3>Assign to officer</h3>
+        <label for="officer-select">Officer</label>
+        <select id="officer-select"></select>
+        <label for="department-input">Department (optional)</label>
+        <input id="department-input" type="text" maxlength="100">
+        <p id="assign-message" class="form-error" role="status"></p>
+        <button id="assign-btn" type="submit">Assign</button>
+      </form>
+
+      <form id="status-form">
+        <h3>Update status</h3>
+        <label for="status-select">New status</label>
+        <select id="status-select"></select>
+        <label for="remarks-input">Remarks (required when resolving)</label>
+        <textarea id="remarks-input" maxlength="2000"></textarea>
+        <p id="status-message" class="form-error" role="status"></p>
+        <button id="status-btn" type="submit">Update status</button>
+      </form>
+
+      <button id="close-panel" type="button" class="btn-secondary">Close</button>
+    </section>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/admin_dashboard.js') }}"></script>
+{% endblock %}

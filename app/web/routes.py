@@ -26,3 +26,9 @@ def my_complaints():
 @bp.get("/track")
 def track():
     return render_template("track.html")
+
+
+@bp.get("/admin")
+def admin_dashboard():
+    return render_template("admin_dashboard.html")
+
