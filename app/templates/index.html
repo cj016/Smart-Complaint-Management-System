@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <h1>Smart Complaint Management System</h1>
+  <p>Lodge civic complaints, follow their progress and see them resolved.</p>
+
+  <div class="grid grid-3">
+    <section class="card">
+      <h2>Lodge a complaint</h2>
+      <p>Describe the problem, add its location and up to 3 photos.</p>
+      <a class="btn" href="{{ url_for('web.lodge') }}">Lodge complaint</a>
+    </section>
+    <section class="card">
+      <h2>Track status</h2>
+      <p>See where each of your complaints stands.</p>
+      <a class="btn" href="{{ url_for('web.my_complaints') }}">My complaints</a>
+      <a class="btn btn-secondary" href="{{ url_for('web.track') }}">Search by ID</a>
+    </section>
+    <section class="card">
+      <h2>For officers</h2>
+      <p>Review, assign and resolve complaints from the dashboard.</p>
+      <a class="btn btn-secondary" href="{{ url_for('web.admin_dashboard') }}">Admin dashboard</a>
+    </section>
+  </div>
+{% endblock %}

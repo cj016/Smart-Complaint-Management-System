@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block content %}
+  <h1>Admin dashboard</h1>
+
+  <div id="login-warning" class="alert alert-info" hidden>
+    <strong>Please log in as an officer or admin to see the dashboard.</strong>
+  </div>
+  <div id="forbidden-warning" class="alert alert-error" hidden>
+    <strong>Your account does not have access to the dashboard.</strong>
+  </div>
+
+  <section id="dashboard" hidden>
+    <div class="card">
+      <div class="form-row">
+        <div>
+          <label for="f-q">Search</label>
+          <input id="f-q" type="search" placeholder="ID, location or description"
+                 autocomplete="off">
+        </div>
+        <div>
+          <label for="f-status">Status</label>
+          <select id="f-status"><option value="">All</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="f-category">Category</label>
+          <select id="f-category"><option value="">All</option></select>
+        </div>
+        <div>
+          <label for="f-priority">Priority</label>
+          <select id="f-priority"><option value="">All</option></select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="f-sort">Sort by</label>
+          <select id="f-sort">
+            <option value="created_at">Date submitted</option>
+            <option value="updated_at">Last updated</option>
+            <option value="priority">Priority</option>
+            <option value="status">Status</option>
+            <option value="category">Category</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-order">Order</label>
+          <select id="f-order">
+            <option value="desc">Descending</option>
+            <option value="asc">Ascending</option>
+          </select>
+        </div>
+      </div>
+      <p>
+        <button id="apply-btn" type="button">Apply</button>
+        <button id="reset-btn" type="button" class="btn-secondary">Reset</button>
+      </p>
+    </div>
+
+    <p id="message" role="status"></p>
+
+    <div class="table-wrap">
+      <table id="complaints-table">
+        <thead>
+          <tr>
+            <th>Complaint ID</th><th>Category</th><th>Location</th><th>Priority</th>
+            <th>Status</th><th>Assigned to</th><th>Submitted</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div>
+      <button id="prev-btn" type="button">Previous</button>
+      <span id="page-info"></span>
+      <button id="next-btn" type="button">Next</button>
+    </div>
+
+    <section id="manage" class="card" hidden aria-live="polite">
+      <h2 id="m-id"></h2>
+      <p><span id="m-status" class="badge"></span></p>
+      <dl>
+        <dt>Category</dt><dd id="m-category"></dd>
+        <dt>Location</dt><dd id="m-location"></dd>
+        <dt>Description</dt><dd id="m-description"></dd>
+        <dt>Priority</dt><dd id="m-priority"></dd>
+        <dt>Department</dt><dd id="m-department"></dd>
+        <dt>Assigned to</dt><dd id="m-assignee"></dd>
+        <dt>Resolution remarks</dt><dd id="m-resolution"></dd>
+      </dl>
+
+      <div id="assign-box" hidden>
+        <h3>Assign to an officer</h3>
+        <label for="m-officer">Officer</label>
+        <select id="m-officer"></select>
+        <label for="m-department-input">Department (optional)</label>
+        <input id="m-department-input" type="text" maxlength="100"
+               placeholder="Defaults to the officer's department">
+        <p><button id="assign-btn" type="button">Assign</button></p>
+      </div>
+
+      <div id="status-box" hidden>
+        <h3>Update status</h3>
+        <label for="m-new-status">New status</label>
+        <select id="m-new-status"></select>
+        <label for="m-remarks">Remarks (required when resolving)</label>
+        <textarea id="m-remarks" maxlength="2000"></textarea>
+        <p><button id="status-btn" type="button">Update status</button></p>
+      </div>
+
+      <p id="m-message" role="status"></p>
+      <button id="close-btn" type="button" class="btn-secondary">Close</button>
+    </section>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/admin_dashboard.js') }}"></script>
+{% endblock %}
