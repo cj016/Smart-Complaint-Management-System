@@ -16,9 +16,7 @@ from ..auth.decorators import roles_required
 from ..errors import error_response
 from ..extensions import db
 from ..models import PRIORITIES, STATUSES, Complaint, Role, StatusHistory, User
-from ..utils import utcnow
-from .services import (ASSIGNABLE_STATUSES, AUTO_ASSIGN_FROM, MAX_REMARKS, SORT_COLUMNS,
-                       TRANSITIONS, build_dashboard_query)
+from .services import (ASSIGNABLE_STATUSES, AUTO_ASSIGN_FROM, SORT_COLUMNS, TRANSITIONS, build_dashboard_query)
 
 bp = Blueprint("admin", __name__)
 
@@ -163,57 +161,5 @@ def assign_complaint(public_id):
         complaint.history.append(StatusHistory(
             status="Assigned", remarks=f"Assigned to {officer.name}",
             changed_by_id=actor.id))
-    db.session.commit()
-    return jsonify(serialize_row(complaint))
-
-
-# ---- SCMS-F033: update status with resolution remarks -------------------------------
-
-@bp.patch("/complaints/<public_id>/status")
-@roles_required(*STAFF)
-def update_status(public_id):
-    complaint = _find_complaint(public_id)
-    if complaint is None:
-        return _not_found()
-
-    actor = _current_user()
-    if actor.role == Role.OFFICER and complaint.assigned_to_id != actor.id:
-        return error_response("FORBIDDEN",
-                              "Officers can only update complaints assigned to them.",
-                              status=403)
-
-    data = request.get_json(silent=True) or {}
-    new_status = data.get("status")
-    remarks = data.get("remarks")
-
-    if new_status not in STATUSES:
-        return error_response("VALIDATION_ERROR", "Unknown status.",
-                              {"field": "status", "allowed": STATUSES}, 422)
-    if remarks is not None and not isinstance(remarks, str):
-        return error_response("VALIDATION_ERROR", "Remarks must be text.",
-                              {"field": "remarks"}, 422)
-    remarks = (remarks or "").strip()
-    if len(remarks) > MAX_REMARKS:
-        return error_response("VALIDATION_ERROR",
-                              f"Remarks must be at most {MAX_REMARKS} characters.",
-                              {"field": "remarks"}, 422)
-    if new_status == "Resolved" and not remarks:
-        return error_response("VALIDATION_ERROR",
-                              "Resolution remarks are required to resolve a complaint.",
-                              {"field": "remarks"}, 422)
-
-    allowed = TRANSITIONS.get(complaint.status, [])
-    if new_status not in allowed:
-        return error_response(
-            "CONFLICT",
-            f"Cannot move a complaint from {complaint.status} to {new_status}.",
-            {"from": complaint.status, "allowed": allowed}, 409)
-
-    complaint.status = new_status
-    if new_status == "Resolved":
-        complaint.resolution_remarks = remarks
-        complaint.resolved_at = utcnow()
-    complaint.history.append(StatusHistory(
-        status=new_status, remarks=remarks or None, changed_by_id=actor.id))
     db.session.commit()
     return jsonify(serialize_row(complaint))
