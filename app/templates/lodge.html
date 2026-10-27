@@ -40,6 +40,11 @@
                 placeholder="Describe the problem"></textarea>
       <p class="field-error" id="error-description"></p>
 
+      <label for="photos">Photos (optional, up to 3 images, 5 MB each)</label>
+      <input id="photos" name="photos" type="file" multiple
+             accept="image/jpeg,image/png,image/webp">
+      <p class="field-error" id="error-photos"></p>
+
       <button id="submit-btn" type="submit">Submit complaint</button>
     </form>
   </section>

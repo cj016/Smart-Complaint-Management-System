@@ -3,6 +3,8 @@
 (function () {
   var TOKEN_KEY = "scms_token";
   var FIELDS = ["category", "location", "description"];
+  var MAX_PHOTOS = 3;
+  var MAX_PHOTO_BYTES = 5 * 1024 * 1024;  // same limits as the server
   var form = document.getElementById("lodge-form");
   var warning = document.getElementById("login-warning");
   var success = document.getElementById("success");
@@ -24,8 +26,16 @@
         errors[f] = f.charAt(0).toUpperCase() + f.slice(1) + " is required.";
       }
     });
+    var files = Array.prototype.slice.call(form.elements.photos.files);
+    var photoError = "";
+    if (files.length > MAX_PHOTOS) {
+      photoError = "You can attach at most " + MAX_PHOTOS + " photos.";
+    } else if (files.some(function (f) { return f.size > MAX_PHOTO_BYTES; })) {
+      photoError = "Each photo must be 5 MB or smaller.";
+    }
     showErrors(errors);
-    return Object.keys(errors).length === 0;
+    document.getElementById("error-photos").textContent = photoError;
+    return Object.keys(errors).length === 0 && !photoError;
   }
 
   form.addEventListener("submit", function (e) {
@@ -66,6 +76,7 @@
         success.hidden = false;
         form.reset();
         showErrors({});
+        document.getElementById("error-photos").textContent = "";
       })
       .catch(function () {
         formError.textContent = "Could not submit. Please try again.";
