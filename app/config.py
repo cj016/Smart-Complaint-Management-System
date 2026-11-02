@@ -3,6 +3,8 @@ from datetime import timedelta
 
 
 class BaseConfig:
+    FORCE_HTTPS = os.getenv("FORCE_HTTPS", "false").lower() == "true"
+    USE_TLS = os.getenv("USE_TLS", "false").lower() == "true"  # local HTTPS demo
     PII_ENCRYPTION_KEY = os.getenv("PII_ENCRYPTION_KEY")
     AUTO_VERIFY = os.getenv("AUTO_VERIFY", "false").lower() == "true"
     SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key-change-me-0123456789")
