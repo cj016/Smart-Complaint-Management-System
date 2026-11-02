@@ -3,6 +3,12 @@ from datetime import timedelta
 
 
 class BaseConfig:
+    JWT_TOKEN_LOCATION = ["headers"]     # never cookies, so no ambient credential
+    JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=30)
+    CORS_ORIGINS = os.getenv(
+        "CORS_ORIGINS", "http://127.0.0.1:5000,http://localhost:5000").split(",")
+    WTF_CSRF_ENABLED = True
+    WTF_CSRF_CHECK_DEFAULT = True
     FORCE_HTTPS = os.getenv("FORCE_HTTPS", "false").lower() == "true"
     USE_TLS = os.getenv("USE_TLS", "false").lower() == "true"  # local HTTPS demo
     PII_ENCRYPTION_KEY = os.getenv("PII_ENCRYPTION_KEY")
