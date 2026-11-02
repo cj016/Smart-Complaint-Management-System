@@ -33,6 +33,23 @@ def create_app(config_name=None):
         resp.headers["Referrer-Policy"] = "same-origin"
         return resp
 
+    if app.config.get("FORCE_HTTPS"):
+        from flask_talisman import Talisman
+        from werkzeug.middleware.proxy_fix import ProxyFix
+
+        # trust the reverse proxy's X-Forwarded-Proto so Flask knows the request was HTTPS
+        app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
+        Talisman(
+            app,
+            force_https=True,
+            strict_transport_security=True,
+            strict_transport_security_max_age=31536000,
+            strict_transport_security_include_subdomains=True,
+            content_security_policy=None,  # CSP is already set in security_headers (SR003)
+            frame_options=None,
+            referrer_policy=None,
+        )
+
     return app
 
 
