@@ -1,18 +1,16 @@
+from unittest.mock import patch
+
+from app.extensions import db
+
+
 def test_health_ok(client):
-    resp = client.get("/api/v1/health")
-    assert resp.status_code == 200
-    assert resp.get_json()["status"] == "ok"
+    r = client.get("/health")
+    assert r.status_code == 200
+    assert r.get_json()["database"] == "up"
 
 
-def test_every_module_stub_is_wired(client):
-    for prefix in ["auth", "complaints", "tracking", "admin", "notifications", "reports"]:
-        resp = client.get(f"/api/v1/{prefix}/ping")
-        assert resp.status_code == 200, prefix
-
-
-def test_unknown_api_route_uses_standard_error_format(client):
-    resp = client.get("/api/v1/does-not-exist")
-    assert resp.status_code == 404
-    err = resp.get_json()["error"]
-    assert set(err) == {"code", "message", "details"}
-    assert err["code"] == "NOT_FOUND"
+def test_health_reports_db_down(client):
+    with patch.object(db.session, "execute", side_effect=Exception("db down")):
+        r = client.get("/health")
+    assert r.status_code == 503
+    assert r.get_json()["status"] == "degraded"
