@@ -15,6 +15,8 @@ class BaseConfig:
     MAX_PHOTO_BYTES = 5 * 1024 * 1024    # SCMS-F-013
     MAX_FAILED_LOGINS = 5                # SCMS-F-004
     LOCKOUT_MINUTES = 15                 # SCMS-F-004
+    # SCMS-F-034: hours a complaint may stay open before it is auto-escalated
+    SLA_HOURS = {"Low": 120, "Medium": 72, "High": 48, "Critical": 24}
 
 
 class DevelopmentConfig(BaseConfig):

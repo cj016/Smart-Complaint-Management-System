@@ -18,7 +18,7 @@ from ..extensions import db
 from ..models import PRIORITIES, STATUSES, Complaint, Role, StatusHistory, User
 from ..utils import utcnow
 from .services import (ASSIGNABLE_STATUSES, AUTO_ASSIGN_FROM, MAX_REMARKS, SORT_COLUMNS,
-                       TRANSITIONS, build_dashboard_query)
+                       TRANSITIONS, build_dashboard_query, escalate_overdue)
 
 bp = Blueprint("admin", __name__)
 
@@ -217,3 +217,12 @@ def update_status(public_id):
         status=new_status, remarks=remarks or None, changed_by_id=actor.id))
     db.session.commit()
     return jsonify(serialize_row(complaint))
+
+
+# ---- SCMS-F034: auto-escalate overdue complaints (SLA) -------------------------------
+
+@bp.post("/escalate-overdue")
+@roles_required(Role.ADMIN)
+def escalate_overdue_complaints():
+    escalated = escalate_overdue(actor_id=_current_user().id)
+    return jsonify({"escalatedCount": len(escalated), "items": escalated})
