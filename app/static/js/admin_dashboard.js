@@ -7,6 +7,9 @@
   var page = 1;
   var pages = 1;
   var selected = null; // the complaint row being managed
+  var isAdmin = SCMS.getRole() === "Admin"; // only admins may assign (F-030)
+  var isAdmin = SCMS.getRole() === "Admin"; // only admins may assign (F-030)
+  var isAdmin = SCMS.getRole() === "Admin"; // only admins may assign (F-030)
 
   function $(id) { return document.getElementById(id); }
   var warning = $("login-warning");
@@ -149,6 +152,7 @@
     $("assign-message").textContent = "";
     $("remarks-input").value = "";
     $("department-input").value = c.department || "";
+    $("assign-form").hidden = !isAdmin; // officers do not get assignment controls
     fillStatusOptions(c);
     panel.hidden = false;
     panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -223,6 +227,6 @@
   $("prev-btn").addEventListener("click", function () { if (page > 1) { page -= 1; load(); } });
   $("next-btn").addEventListener("click", function () { if (page < pages) { page += 1; load(); } });
 
-  if (localStorage.getItem(TOKEN_KEY)) { loadOfficers(); }
+  if (localStorage.getItem(TOKEN_KEY) && isAdmin) { loadOfficers(); }
   load();
 })();
