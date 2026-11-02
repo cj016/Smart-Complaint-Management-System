@@ -20,6 +20,8 @@ def create_app(config_name=None):
     from . import models  # noqa: F401  (registers tables with SQLAlchemy)
 
     register_blueprints(app)
+    from .feedback import bp as feedback_bp
+    app.register_blueprint(feedback_bp)
     register_error_handlers(app, jwt)
 
     @app.after_request

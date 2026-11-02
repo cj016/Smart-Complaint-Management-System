@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Resolution feedback{% endblock %}
+{% block content %}
+<h1>Resolution feedback</h1>
+<section id="citizen-feedback" hidden>
+<p>Find your resolved or closed complaint to submit one rating.</p>
+<label for="feedback-id">Complaint ID</label>
+<input id="feedback-id" maxlength="20" placeholder="SCMS-2026-00001">
+<button id="feedback-load" type="button">Find complaint</button>
+<form id="feedback-form" hidden>
+<label for="feedback-rating">Rating</label>
+<select id="feedback-rating" required>
+<option value="">Choose</option><option value="1">1 - Very poor</option>
+<option value="2">2 - Poor</option><option value="3">3 - Average</option>
+<option value="4">4 - Good</option><option value="5">5 - Excellent</option>
+</select>
+<label for="feedback-comment">Comment (optional)</label>
+<textarea id="feedback-comment" maxlength="2000"></textarea>
+<button type="submit">Submit feedback</button>
+</form>
+<p id="citizen-message" role="status" aria-live="polite"></p>
+</section>
+<section id="admin-feedback" hidden>
+<h2>Citizen ratings and comments</h2>
+<p>Dates filter complaint submission dates in UTC.</p>
+<label for="feedback-start">From date</label><input type="date" id="feedback-start">
+<label for="feedback-end">To date (inclusive)</label><input type="date" id="feedback-end">
+<button type="button" id="feedback-refresh">Load feedback</button>
+<p id="feedback-message" role="status" aria-live="polite"></p>
+<div style="overflow-x:auto"><table><thead><tr><th scope="col">Complaint ID</th>
+<th scope="col">Rating / 5</th><th scope="col">Comment</th><th scope="col">Submitted</th>
+</tr></thead><tbody id="feedback-rows"></tbody></table></div>
+<button type="button" id="feedback-prev">Previous</button>
+<button type="button" id="feedback-next">Next</button>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/feedback.js') }}"></script>
+{% endblock %}

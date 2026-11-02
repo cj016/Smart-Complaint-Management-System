@@ -22,6 +22,9 @@
       <a href="{{ url_for('web.register_page') }}"
          data-auth="out" hidden>Register</a>
 
+      <a href="{{ url_for('feedback.feedback_page') }}"
+         data-roles="Complainant,Admin" hidden>Feedback</a>
+
       <!-- Citizen links -->
       <a href="{{ url_for('web.lodge') }}"
          data-roles="Complainant" hidden>Lodge Complaint</a>
