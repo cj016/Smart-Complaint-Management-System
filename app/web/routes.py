@@ -32,3 +32,7 @@ def track():
 def admin_dashboard():
     return render_template("admin_dashboard.html")
 
+
+@bp.get("/login")
+def login_page():
+    return render_template("login.html")
