@@ -1,8 +1,12 @@
-"""Business rules for the admin module (SCMS-F-030 .. F-033), kept out of routes.py."""
+"""Business rules for the admin module (SCMS-F-030 .. F-035), kept out of routes.py."""
+from datetime import timedelta
+
+from flask import current_app
 from sqlalchemy import case
 
 from ..extensions import db
-from ..models import PRIORITIES, STATUSES, Complaint
+from ..models import PRIORITIES, STATUSES, Complaint, StatusHistory
+from ..utils import utcnow
 
 # Which status an officer/admin may move a complaint to next (SRS 4.3 timeline).
 # "Assigned" is reached through the assign endpoint (F-030) and "Reopened" through the
@@ -58,3 +62,47 @@ def build_dashboard_query(category=None, priority=None, status=None,
     # Complaint.id as tie-breaker keeps paging stable.
     return stmt.order_by(primary, Complaint.id.desc())
 
+
+# ---- SCMS-F034: SLA auto-escalation --------------------------------------------------
+
+# A complaint in one of these states has not been resolved yet, so the SLA still runs.
+OPEN_STATUSES = [s for s in STATUSES if s not in ("Resolved", "Closed")]
+
+
+def sla_hours(priority):
+    hours = current_app.config["SLA_HOURS"]
+    return hours.get(priority, hours["Medium"])
+
+
+def sla_due(complaint):
+    """When the complaint must be resolved by (sla_due_at, or created_at + SLA hours)."""
+    return complaint.sla_due_at or (
+        complaint.created_at + timedelta(hours=sla_hours(complaint.priority)))
+
+
+def escalate_overdue(actor_id=None, now=None):
+    """Raise the priority of every open complaint past its SLA by one level.
+
+    The SLA clock restarts for the new priority, so one run never escalates the
+    same complaint twice. Returns a list of what was escalated.
+    """
+    now = now or utcnow()
+    open_complaints = db.session.execute(
+        db.select(Complaint).where(Complaint.status.in_(OPEN_STATUSES))
+    ).scalars().all()
+
+    escalated = []
+    for c in open_complaints:
+        if sla_due(c) > now:
+            continue
+        old = c.priority
+        index = PRIORITIES.index(old) if old in PRIORITIES else 1
+        new = PRIORITIES[min(index + 1, len(PRIORITIES) - 1)]  # stops at Critical
+        c.priority = new
+        c.sla_due_at = now + timedelta(hours=sla_hours(new))
+        c.history.append(StatusHistory(
+            status=c.status, changed_by_id=actor_id,
+            remarks=f"Escalated: SLA breached (priority {old} to {new})"))
+        escalated.append({"complaintId": c.public_id, "from": old, "to": new})
+    db.session.commit()
+    return escalated
