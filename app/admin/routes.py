@@ -100,12 +100,7 @@ def list_complaints():
         return error_response("VALIDATION_ERROR", "order must be asc or desc.",
                               {"field": "order"}, 422)
 
-    # Officers only see complaints assigned to them; admins see everything.
-    actor = _current_user()
-    assignee_id = actor.id if actor.role == Role.OFFICER else None
-
-    stmt = build_dashboard_query(category, priority, status, sort, order,
-                                 assignee_id=assignee_id).options(
+    stmt = build_dashboard_query(category, priority, status, sort, order).options(
         selectinload(Complaint.complainant), selectinload(Complaint.assignee))
     result = db.paginate(stmt, page=page, per_page=per_page, error_out=False)
     return jsonify({

@@ -44,15 +44,12 @@ SORT_COLUMNS = {
 
 
 def build_dashboard_query(category=None, priority=None, status=None,
-                          sort="created_at", order="desc", assignee_id=None):
+                          sort="created_at", order="desc"):
     """SELECT for the admin dashboard with optional filters and a safe sort.
 
     sort/order must already be validated by the caller (only keys of SORT_COLUMNS).
-    assignee_id limits the result to complaints assigned to that user (used for officers).
     """
     stmt = db.select(Complaint)
-    if assignee_id is not None:
-        stmt = stmt.where(Complaint.assigned_to_id == assignee_id)
     if category:
         stmt = stmt.where(Complaint.category == category)
     if priority:

@@ -42,26 +42,13 @@ def test_complainant_is_forbidden(client, seeded):
     assert client.get(URL, headers=auth(seeded["a"])).status_code == 403
 
 
-def test_admin_sees_complaints_of_all_citizens(client, seeded):
-    resp = client.get(URL, headers=auth(seeded["admin"]))
+@pytest.mark.parametrize("who", ["admin", "officer"])
+def test_staff_see_complaints_of_all_citizens(client, seeded, who):
+    resp = client.get(URL, headers=auth(seeded[who]))
     assert resp.status_code == 200
     body = resp.get_json()
     assert body["total"] == 4
     assert {i["complainant"] for i in body["items"]} == {"Asha", "Bala"}
-
-
-def test_officer_sees_only_assigned_complaints(client, seeded):
-    officer = seeded["officer"]
-    make_complaint(seeded["a"], 5, status="Assigned", assignee=officer)
-    resp = client.get(URL, headers=auth(officer))
-    assert resp.status_code == 200
-    assert ids(resp) == ["SCMS-2026-00005"]
-
-
-def test_officer_with_nothing_assigned_sees_empty_list(client, seeded):
-    resp = client.get(URL, headers=auth(seeded["officer"]))
-    assert resp.status_code == 200
-    assert resp.get_json()["total"] == 0
 
 
 def test_default_order_is_newest_first(client, seeded):
