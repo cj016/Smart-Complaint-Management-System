@@ -11,6 +11,8 @@ from ..models.user import OtpCode, Role, User
 from ..utils import utcnow
 from .decorators import roles_required
 
+from ..sanitize import clean_text
+
 bp = Blueprint("auth", __name__)
 
 OTP_MINUTES = 10
@@ -46,7 +48,7 @@ def _issue_otp(user):
 @bp.post("/register")
 def register():
     data = request.get_json(silent=True) or {}
-    name = (data.get("name") or "").strip()
+    name = clean_text(data.get("name"), 120) or ""
     email = (data.get("email") or "").strip().lower()
     mobile = (data.get("mobile") or "").strip() or None
     password = data.get("password") or ""

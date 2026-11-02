@@ -21,6 +21,18 @@ def create_app(config_name=None):
 
     register_blueprints(app)
     register_error_handlers(app, jwt)
+
+    @app.after_request
+    def security_headers(resp):
+        resp.headers["Content-Security-Policy"] = (
+            "default-src 'self'; script-src 'self'; "
+            "style-src 'self' 'unsafe-inline'; img-src 'self' data:; "
+            "frame-ancestors 'none'")
+        resp.headers["X-Content-Type-Options"] = "nosniff"
+        resp.headers["X-Frame-Options"] = "DENY"
+        resp.headers["Referrer-Policy"] = "same-origin"
+        return resp
+
     return app
 
 
