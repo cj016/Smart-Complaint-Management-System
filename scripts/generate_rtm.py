@@ -33,8 +33,8 @@ RTM = [
      ["test_tracking_timeline.py"], ""),
     ("SCMS-F-023", "In-app / email-SMS status notifications", "TC-Track-04", [],
      "No automated test yet"),
-    ("SCMS-F-024", "Reopen resolved or closed complaint", "TC-Track-05", [],
-     "No automated test yet"),
+    ("SCMS-F-024", "Reopen resolved or closed complaint", "TC-Track-05",
+     ["test_reopening.py"], ""),
     ("SCMS-F-030", "Assign complaint to officer", "TC-Admin-01", ["test_admin_assign.py"], ""),
     ("SCMS-F-031", "View all complaints in admin dashboard", "TC-Admin-02",
      ["test_admin_dashboard.py"], ""),
@@ -48,10 +48,10 @@ RTM = [
      ["test_admin_reassign.py"], ""),
     ("SCMS-F-040", "Send status-change notification", "TC-Notify-01", [],
      "No automated test yet"),
-    ("SCMS-F-041", "Rate resolution and give feedback", "TC-Feedback-01", [],
-     "No automated test yet"),
-    ("SCMS-F-042", "Generate category/department-wise reports", "TC-Report-01", [],
-     "No automated test yet"),
+    ("SCMS-F-041", "Rate resolution and give feedback", "TC-Feedback-01",
+     ["test_feedback.py"], ""),
+    ("SCMS-F-042", "Generate category/department-wise reports", "TC-Report-01",
+     ["test_resolution_reports.py"], ""),
     ("SCMS-NF-001", "Dashboard response time target", "TC-Perf-01",
      ["test_dashboard_performance.py"], "pytest timing test, see DEVIATIONS.md"),
     ("SCMS-NF-002", "99.5% monthly uptime", "Ops reports", [],
@@ -94,7 +94,11 @@ def main():
 
     rows, counts = [], {"P": 0, "F": 0, "N": 0}
     for req, short, case, files, note in RTM:
-        if not files:
+        pending_feature = req in ("SCMS-F-024", "SCMS-F-041", "SCMS-F-042") and any(
+            not (ROOT / "tests" / filename).exists() for filename in files)
+        if pending_feature:
+            status, comment = "N", "Pending separate feature PR merge"
+        elif not files:
             status, comment = "N", note
         elif all(results[f][0] for f in files):
             status = "P"
