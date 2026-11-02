@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Notifications{% endblock %}
+
+{% block content %}
+<h1>My Notifications</h1>
+
+<div id="notifications-login-warning" class="alert alert-info" hidden>
+  Please log in as a citizen to view your notifications.
+  <a href="{{ url_for('web.login_page') }}">Login</a>
+</div>
+
+<section id="notifications-section" hidden>
+  <p id="notifications-message" role="status"></p>
+
+  <p>
+    <strong>Unread notifications:</strong>
+    <span id="unread-count">0</span>
+  </p>
+
+  <div id="notifications-list" aria-live="polite"></div>
+
+  <div class="notification-pagination">
+    <button type="button" id="notifications-prev">Previous</button>
+    <span id="notifications-page-info"></span>
+    <button type="button" id="notifications-next">Next</button>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/notifications.js') }}"></script>
+{% endblock %}

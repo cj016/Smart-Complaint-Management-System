@@ -41,3 +41,8 @@ def login_page():
 @bp.get("/register")
 def register_page():
     return render_template("register.html")
+
+
+@bp.get("/notifications")
+def notifications_page():
+    return render_template("notifications.html")
