@@ -1,7 +1,9 @@
-// SCMS-F-021 - "My Complaints" page.
-// Expects the login page (SCMS-F-002) to store the JWT in localStorage under "scms_token".
+// SCMS-F-021: My Complaints page
+// UI-03: Consistent expired-session handling.
+
 (function () {
-  var TOKEN_KEY = "scms_token";
+  "use strict";
+
   var page = 1;
   var pages = 1;
 
@@ -18,68 +20,173 @@
     return status.toLowerCase().replace(/\s+/g, "-");
   }
 
-  function cell(text) {
+  function cell(value) {
     var td = document.createElement("td");
-    td.textContent = text; // textContent (not innerHTML) keeps this XSS-safe (SCMS-SR-003)
+    td.textContent = value == null ? "" : String(value);
     return td;
   }
 
+  function clearComplaintData() {
+    tbody.replaceChildren();
+    message.textContent = "";
+    pageInfo.textContent = "";
+    page = 1;
+    pages = 1;
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+  }
+
+  function showLoginWarning() {
+    clearComplaintData();
+    warning.hidden = false;
+    section.hidden = true;
+  }
+
+  function handleExpiredSession() {
+    SCMS.clear();
+    showLoginWarning();
+
+    // Keep the shared navigation consistent without
+    // modifying the authentication module.
+    document.querySelectorAll("[data-auth]").forEach(function (el) {
+      el.hidden = el.getAttribute("data-auth") === "in";
+    });
+
+    document.querySelectorAll("[data-roles]").forEach(function (el) {
+      el.hidden = true;
+    });
+
+    var who = document.getElementById("nav-user");
+    if (who) {
+      who.textContent = "";
+    }
+  }
+
   function render(items) {
-    tbody.innerHTML = "";
-    items.forEach(function (c) {
+    tbody.replaceChildren();
+
+    items.forEach(function (complaint) {
       var tr = document.createElement("tr");
-      tr.appendChild(cell(c.complaintId));
-      tr.appendChild(cell(c.category));
-      tr.appendChild(cell(c.location));
+      tr.appendChild(cell(complaint.complaintId));
+      tr.appendChild(cell(complaint.category));
+      tr.appendChild(cell(complaint.location));
+
       var statusTd = document.createElement("td");
       var badge = document.createElement("span");
-      badge.className = "badge badge-" + slug(c.status);
-      badge.textContent = c.status;
+      badge.className = "badge badge-" + slug(complaint.status);
+      badge.textContent = complaint.status;
       statusTd.appendChild(badge);
       tr.appendChild(statusTd);
-      tr.appendChild(cell(new Date(c.createdAt).toLocaleDateString()));
+
+      var submitted = complaint.createdAt
+        ? new Date(complaint.createdAt).toLocaleDateString()
+        : "";
+
+      tr.appendChild(cell(submitted));
       tbody.appendChild(tr);
     });
   }
 
   function load() {
-    var token = localStorage.getItem(TOKEN_KEY);
+    var token = SCMS.getToken();
+
     if (!token) {
-      warning.hidden = false;
-      section.hidden = true;
+      showLoginWarning();
       return;
     }
+
     warning.hidden = true;
     section.hidden = false;
+    message.textContent = "Loading complaints...";
 
+    var requestedPage = page;
     var url = "/api/v1/tracking/my-complaints?page=" + page;
-    if (filter.value) { url += "&status=" + encodeURIComponent(filter.value); }
 
-    fetch(url, { headers: { Authorization: "Bearer " + token } })
-      .then(function (resp) {
-        if (resp.status === 401) {
-          localStorage.removeItem(TOKEN_KEY);
-          warning.hidden = false;
-          section.hidden = true;
+    if (filter.value) {
+      url += "&status=" + encodeURIComponent(filter.value);
+    }
+
+    fetch(url, {
+      headers: { Authorization: "Bearer " + token }
+    })
+      .then(function (response) {
+        if (response.status === 401) {
+          handleExpiredSession();
           return null;
         }
-        return resp.json();
+
+        return response.json().then(function (data) {
+          return { ok: response.ok, data: data };
+        });
       })
-      .then(function (data) {
-        if (!data) { return; }
-        if (data.error) { message.textContent = data.error.message; return; }
+      .then(function (result) {
+        if (!result) {
+          return;
+        }
+
+        // Ignore results from a session that has since changed.
+        if (SCMS.getToken() !== token) {
+          return;
+        }
+
+        if (!result.ok || result.data.error) {
+          message.textContent = SCMS.errorText(
+            result.data,
+            "Could not load complaints."
+          );
+          return;
+        }
+
+        // Ignore an older pagination response.
+        if (requestedPage !== page) {
+          return;
+        }
+
+        var data = result.data;
+
+        if (!Array.isArray(data.items)) {
+          message.textContent = "Invalid response from server.";
+          return;
+        }
+
         render(data.items);
+
         pages = data.pages || 1;
-        message.textContent = data.total === 0 ? "No complaints found." : "";
         pageInfo.textContent = "Page " + data.page + " of " + pages;
+
         prevBtn.disabled = data.page <= 1;
         nextBtn.disabled = data.page >= pages;
+
+        message.textContent = data.total === 0
+          ? "No complaints found."
+          : "";
       })
-      .catch(function () { message.textContent = "Could not load complaints. Try again."; });
+      .catch(function () {
+        if (SCMS.getToken() === token) {
+          message.textContent =
+            "Could not load complaints. Try again.";
+        }
+      });
   }
 
-  filter.addEventListener("change", function () { page = 1; load(); });
-  prevBtn.addEventListener("click", function () { if (page > 1) { page -= 1; load(); } });
-  nextBtn.addEventListener("click", function () { if (page < pages) { page += 1; load(); } });
+  filter.addEventListener("change", function () {
+    page = 1;
+    load();
+  });
+
+  prevBtn.addEventListener("click", function () {
+    if (page > 1) {
+      page -= 1;
+      load();
+    }
+  });
+
+  nextBtn.addEventListener("click", function () {
+    if (page < pages) {
+      page += 1;
+      load();
+    }
+  });
+
   load();
 })();
