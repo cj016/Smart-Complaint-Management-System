@@ -3,6 +3,7 @@ from datetime import timedelta
 
 
 class BaseConfig:
+    AUTO_VERIFY = os.getenv("AUTO_VERIFY", "false").lower() == "true"
     SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key-change-me-0123456789")
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "dev-jwt-secret-change-me-0123456789")
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(seconds=3600)  # SAD 4.3: expiresIn 3600
