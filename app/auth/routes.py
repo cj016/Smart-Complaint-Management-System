@@ -13,6 +13,8 @@ from .decorators import roles_required
 
 from ..sanitize import clean_text
 
+from ..crypto import blind_index
+
 bp = Blueprint("auth", __name__)
 
 OTP_MINUTES = 10
@@ -59,11 +61,12 @@ def register():
         return jsonify(error="Mobile must be 10-15 digits"), 400
     if User.query.filter_by(email=email).first():
         return jsonify(error="Email already registered"), 409
-    if mobile and User.query.filter_by(mobile=mobile).first():
+    if mobile and User.query.filter_by(mobile_hash=blind_index(mobile)).first():
         return jsonify(error="Mobile already registered"), 409
 
     # role is never taken from the request
-    user = User(name=name, email=email, mobile=mobile, role=Role.COMPLAINANT)
+    user = User(name=name, email=email, role=Role.COMPLAINANT)
+    user.set_mobile(mobile)
     user.set_password(password)
     db.session.add(user)
     db.session.commit()
