@@ -1,26 +1,28 @@
+import re
 import secrets
 from datetime import timedelta
 
-from .decorators import roles_required
-
-from flask import Blueprint, jsonify, request
-from flask_jwt_extended import create_access_token
+from flask import Blueprint, current_app, jsonify, request
+from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from ..extensions import db
 from ..models.user import OtpCode, Role, User
 from ..utils import utcnow
+from .decorators import roles_required
 
 bp = Blueprint("auth", __name__)
 
 OTP_MINUTES = 10
 MAX_ATTEMPTS = 5
 LOCK_MINUTES = 15  # use the SRS value
+EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+MOBILE_RE = re.compile(r"^\+?\d{10,15}$")
 
 
 @bp.get("/ping")
 def ping():
-    return jsonify({"module": "auth", "status": "stub - not implemented yet"})
+    return jsonify({"module": "auth", "status": "ok"})
 
 
 def _send_otp(user, code):
@@ -38,6 +40,7 @@ def _issue_otp(user):
     ))
     db.session.commit()
     _send_otp(user, code)
+    return code
 
 
 @bp.post("/register")
@@ -48,8 +51,10 @@ def register():
     mobile = (data.get("mobile") or "").strip() or None
     password = data.get("password") or ""
 
-    if not name or "@" not in email or len(password) < 8:
+    if not name or not EMAIL_RE.match(email) or len(password) < 8:
         return jsonify(error="Name, valid email and password (min 8 chars) required"), 400
+    if mobile and not MOBILE_RE.match(mobile):
+        return jsonify(error="Mobile must be 10-15 digits"), 400
     if User.query.filter_by(email=email).first():
         return jsonify(error="Email already registered"), 409
     if mobile and User.query.filter_by(mobile=mobile).first():
@@ -61,8 +66,17 @@ def register():
     db.session.add(user)
     db.session.commit()
 
-    _issue_otp(user)
-    return jsonify(message="Registered. Enter the OTP sent to you."), 201
+    # Simplified verification: set AUTO_VERIFY=true in .env to skip OTP entirely.
+    if current_app.config.get("AUTO_VERIFY"):
+        user.is_verified = True
+        db.session.commit()
+        return jsonify(message="Registered.", verified=True), 201
+
+    code = _issue_otp(user)
+    body = {"message": "Registered. Enter the OTP sent to you.", "verified": False}
+    if current_app.debug or current_app.testing:
+        body["dev_otp"] = code  # convenience for demo/tests only, never in production
+    return jsonify(body), 201
 
 
 @bp.post("/verify-otp")
@@ -122,7 +136,25 @@ def login():
 
     token = create_access_token(
         identity=str(user.id), additional_claims={"role": user.role})
-    return jsonify(access_token=token, role=user.role), 200
+    return jsonify(access_token=token, role=user.role, name=user.name), 200
+
+
+@bp.get("/me")
+@jwt_required()
+def me():
+    user = db.session.get(User, int(get_jwt_identity()))
+    if not user:
+        return jsonify(error="User not found"), 404
+    return jsonify(id=user.id, name=user.name, email=user.email,
+                   role=user.role, department=user.department), 200
+
+
+@bp.post("/logout")
+@jwt_required()
+def logout():
+    # Tokens are stateless; the client deletes its copy. (A blocklist can be
+    # added later if the SRS requires server-side revocation.)
+    return jsonify(message="Logged out"), 200
 
 
 @bp.get("/admin-check")
