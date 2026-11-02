@@ -1,7 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Track Complaint{% endblock %}
+{% block title %}{{ "Reopen & Feedback" if resolution_actions else "Track Complaint" }}{% endblock %}
 {% block content %}
-  <h1>Track a complaint</h1>
+  <h1>{{ "Reopen & Feedback" if resolution_actions else "Track a complaint" }}</h1>
+  {% if resolution_actions %}
+  <p>Find your resolved or closed complaint below to reopen it or rate its resolution.</p>
+  {% endif %}
   <p>Enter your Complaint ID (for example SCMS-2026-00042) to see its current status.</p>
 
   <div id="login-warning" hidden>
@@ -28,6 +31,27 @@
         <dt>Submitted</dt><dd id="result-created"></dd>
         <dt>Last updated</dt><dd id="result-updated"></dd>
       </dl>
+      <section id="citizen-actions" hidden>
+        <h3>Resolution actions</h3>
+        <form id="reopen-form">
+          <label for="reopen-reason">Why is the issue still unresolved?</label>
+          <textarea id="reopen-reason" maxlength="2000" required></textarea>
+          <button type="submit">Reopen complaint</button>
+        </form>
+        <form id="feedback-form">
+          <label for="feedback-rating">Resolution rating</label>
+          <select id="feedback-rating" required>
+            <option value="">Choose a rating</option>
+            <option value="1">1 - Very poor</option><option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option><option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+          <label for="feedback-comment">Feedback (optional)</label>
+          <textarea id="feedback-comment" maxlength="2000"></textarea>
+          <button type="submit">Submit feedback</button>
+        </form>
+        <p id="action-message" role="status" aria-live="polite"></p>
+      </section>
       <h3>Status timeline</h3>
       <ol id="timeline" class="timeline" aria-label="Status timeline"></ol>
     </div>
@@ -35,4 +59,5 @@
 {% endblock %}
 {% block scripts %}
   <script src="{{ url_for('static', filename='js/track.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/track_actions.js') }}"></script>
 {% endblock %}

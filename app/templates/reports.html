@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Resolution Reports{% endblock %}
+{% block content %}
+<h1>Resolution reports</h1>
+<p>Completed means currently Resolved or Closed. Reopened complaints count as open.</p>
+<p>Date filters use complaint submission dates in UTC. Average turnaround is submission to
+latest resolution, for currently completed complaints with valid timestamps.</p>
+<label for="report-start">From date (optional)</label>
+<input type="date" id="report-start">
+<label for="report-end">To date (optional, inclusive)</label>
+<input type="date" id="report-end">
+<label for="report-group">Group by</label>
+<select id="report-group"><option value="category">Category</option>
+<option value="department">Department</option></select>
+<button type="button" id="load-report">Load report</button>
+<button type="button" id="export-report">Download CSV</button>
+<p id="report-message" role="status" aria-live="polite"></p>
+<div style="overflow-x:auto">
+<table><thead><tr><th scope="col">Group</th><th scope="col">Total</th>
+<th scope="col">Resolved</th><th scope="col">Closed</th><th scope="col">Reopened</th>
+<th scope="col">Completed</th><th scope="col">Open</th><th scope="col">Resolution %</th>
+<th scope="col">Average turnaround (hours)</th><th scope="col">Timed completions</th>
+</tr></thead><tbody id="report-rows"></tbody></table>
+</div>
+<h2>Citizen resolution feedback</h2>
+<p>Uses the same complaint-submission date filter.</p>
+<p id="feedback-message" role="status" aria-live="polite"></p>
+<div style="overflow-x:auto">
+<table><thead><tr><th scope="col">Complaint ID</th><th scope="col">Rating / 5</th>
+<th scope="col">Comment</th><th scope="col">Submitted</th></tr></thead>
+<tbody id="feedback-rows"></tbody></table>
+</div>
+<button type="button" id="feedback-prev">Previous feedback</button>
+<button type="button" id="feedback-next">Next feedback</button>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/reports.js') }}"></script>
+{% endblock %}

@@ -20,6 +20,8 @@ def create_app(config_name=None):
     from . import models  # noqa: F401  (registers tables with SQLAlchemy)
 
     register_blueprints(app)
+    from .citizen_actions import bp as citizen_actions_bp
+    app.register_blueprint(citizen_actions_bp)
     register_error_handlers(app, jwt)
 
     @app.after_request
