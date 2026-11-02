@@ -1,7 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Track Complaint{% endblock %}
+{% block title %}{{ "Reopen complaint" if resolution_actions else "Track Complaint" }}{% endblock %}
 {% block content %}
-  <h1>Track a complaint</h1>
+  <h1>{{ "Reopen complaint" if resolution_actions else "Track a complaint" }}</h1>
+  {% if resolution_actions %}
+  <p>Find your resolved or closed complaint below to reopen it with a reason.</p>
+  {% endif %}
   <p>Enter your Complaint ID (for example SCMS-2026-00042) to see its current status.</p>
 
   <div id="login-warning" hidden>
@@ -28,6 +31,15 @@
         <dt>Submitted</dt><dd id="result-created"></dd>
         <dt>Last updated</dt><dd id="result-updated"></dd>
       </dl>
+      <section id="citizen-actions" hidden>
+        <h3>Reopen complaint</h3>
+        <form id="reopen-form">
+          <label for="reopen-reason">Why is the issue still unresolved?</label>
+          <textarea id="reopen-reason" maxlength="2000" required></textarea>
+          <button type="submit">Reopen complaint</button>
+        </form>
+        <p id="action-message" role="status" aria-live="polite"></p>
+      </section>
       <h3>Status timeline</h3>
       <ol id="timeline" class="timeline" aria-label="Status timeline"></ol>
     </div>
@@ -35,4 +47,5 @@
 {% endblock %}
 {% block scripts %}
   <script src="{{ url_for('static', filename='js/track.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/reopening.js') }}"></script>
 {% endblock %}
