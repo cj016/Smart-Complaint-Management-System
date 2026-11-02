@@ -12,6 +12,7 @@ from flask import Blueprint, jsonify, request
 from flask_jwt_extended import get_jwt_identity
 from sqlalchemy.orm import selectinload
 
+from ..audit.services import record_audit
 from ..auth.decorators import roles_required
 from ..errors import error_response
 from ..extensions import db
@@ -170,6 +171,11 @@ def assign_complaint(public_id):
         complaint.history.append(StatusHistory(
             status="Assigned", remarks=f"Assigned to {officer.name}",
             changed_by_id=actor.id))
+    record_audit(
+        actor.id, "COMPLAINT_ASSIGNED", "Complaint",
+        complaint.public_id,
+        f"Assigned to officer {officer.id}; status={complaint.status}",
+    )
     db.session.commit()
     if status_changed:
         notify_status_change(complaint)
@@ -224,6 +230,10 @@ def update_status(public_id):
         complaint.resolved_at = utcnow()
     complaint.history.append(StatusHistory(
         status=new_status, remarks=remarks or None, changed_by_id=actor.id))
+    record_audit(
+        actor.id, "COMPLAINT_STATUS_CHANGED", "Complaint",
+        complaint.public_id, f"New status: {new_status}",
+    )
     db.session.commit()
     notify_status_change(complaint)
     return jsonify(serialize_row(complaint))
@@ -293,5 +303,10 @@ def reassign_complaint(public_id):
     complaint.history.append(StatusHistory(
         status=complaint.status, remarks=f"Reassigned: {remarks.strip()}",
         changed_by_id=actor.id))
+    record_audit(
+        actor.id, "COMPLAINT_REASSIGNED", "Complaint",
+        complaint.public_id,
+        f"Reassigned to officer {officer.id}; reason: {remarks.strip()}",
+    )
     db.session.commit()
     return jsonify(serialize_row(complaint))

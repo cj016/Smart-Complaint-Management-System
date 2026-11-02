@@ -54,6 +54,7 @@ def create_app(config_name=None):
 
 
 def register_blueprints(app):
+    from .audit.routes import bp as audit_bp
     from .admin.routes import bp as admin_bp
     from .auth.routes import bp as auth_bp
     from .complaints.routes import bp as complaints_bp
@@ -69,5 +70,6 @@ def register_blueprints(app):
     app.register_blueprint(complaints_bp, url_prefix="/api/v1/complaints")
     app.register_blueprint(tracking_bp, url_prefix="/api/v1/tracking")
     app.register_blueprint(admin_bp, url_prefix="/api/v1/admin")
+    app.register_blueprint(audit_bp, url_prefix="/api/v1/audit")
     app.register_blueprint(notifications_bp, url_prefix="/api/v1/notifications")
     app.register_blueprint(reporting_bp, url_prefix="/api/v1/reports")
