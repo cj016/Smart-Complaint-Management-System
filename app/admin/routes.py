@@ -226,3 +226,62 @@ def update_status(public_id):
 def escalate_overdue_complaints():
     escalated = escalate_overdue(actor_id=_current_user().id)
     return jsonify({"escalatedCount": len(escalated), "items": escalated})
+
+
+# ---- SCMS-F035: reassign a complaint to a different officer / department -------------
+
+@bp.post("/complaints/<public_id>/reassign")
+@roles_required(Role.ADMIN)
+def reassign_complaint(public_id):
+    complaint = _find_complaint(public_id)
+    if complaint is None:
+        return _not_found()
+
+    data = request.get_json(silent=True) or {}
+    officer_id = data.get("officerId")
+    department = data.get("department")
+    remarks = data.get("remarks")
+
+    errors = {}
+    officer = None
+    if isinstance(officer_id, bool) or not isinstance(officer_id, int):
+        errors["officerId"] = "officerId is required and must be a number."
+    else:
+        officer = db.session.get(User, officer_id)
+        if officer is None or officer.role != Role.OFFICER:
+            errors["officerId"] = "No officer found with that id."
+    if department is not None:
+        if not isinstance(department, str) or len(department.strip()) > 100:
+            errors["department"] = "Department must be text of at most 100 characters."
+    if not isinstance(remarks, str) or not remarks.strip():
+        errors["remarks"] = "A reason for the reassignment is required."
+    elif len(remarks.strip()) > MAX_REMARKS:
+        errors["remarks"] = f"Reason must be at most {MAX_REMARKS} characters."
+    if errors:
+        return error_response("VALIDATION_ERROR", "Could not reassign the complaint.",
+                              {"fields": errors}, 422)
+
+    if complaint.assigned_to_id is None:
+        return error_response("CONFLICT",
+                              "This complaint is not assigned yet. Assign it first.",
+                              {"status": complaint.status}, 409)
+    if complaint.status not in ASSIGNABLE_STATUSES:
+        return error_response("CONFLICT",
+                              f"A {complaint.status} complaint cannot be reassigned.",
+                              {"status": complaint.status}, 409)
+
+    new_department = ((department or "").strip() or officer.department
+                      or complaint.department)
+    if officer.id == complaint.assigned_to_id and new_department == complaint.department:
+        return error_response("CONFLICT",
+                              "The complaint is already with this officer and department.",
+                              status=409)
+
+    actor = _current_user()
+    complaint.assigned_to_id = officer.id
+    complaint.department = new_department
+    complaint.history.append(StatusHistory(
+        status=complaint.status, remarks=f"Reassigned: {remarks.strip()}",
+        changed_by_id=actor.id))
+    db.session.commit()
+    return jsonify(serialize_row(complaint))
