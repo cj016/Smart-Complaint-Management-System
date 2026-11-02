@@ -62,8 +62,18 @@ var SCMS = (function () {
     var out = document.getElementById("logout-btn");
     if (out) { out.addEventListener("click", function (e) { e.preventDefault(); logout(); }); }
   }
-
   document.addEventListener("DOMContentLoaded", applyNav);
+    function requireRole(roles) {
+    if (!getToken()) {
+      window.location.href = "/login?next=" + encodeURIComponent(window.location.pathname);
+      return false;
+    }
+    if (roles.indexOf(getRole()) === -1) {
+      window.location.href = "/";
+      return false;
+    }
+    return true;
+  }
   return { getToken: getToken, getRole: getRole, save: save, clear: clear,
-           authFetch: authFetch, logout: logout, errorText: errorText };
+           authFetch: authFetch, logout: logout, errorText: errorText, requireRole: requireRole };
 })();
