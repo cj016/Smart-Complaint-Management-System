@@ -16,6 +16,7 @@ from ..auth.decorators import roles_required
 from ..errors import error_response
 from ..extensions import db
 from ..models import PRIORITIES, STATUSES, Complaint, Role, StatusHistory, User
+from ..notifications.status_events import notify_status_change
 from ..utils import utcnow
 from .services import (ASSIGNABLE_STATUSES, AUTO_ASSIGN_FROM, MAX_REMARKS, SORT_COLUMNS,
                        TRANSITIONS, build_dashboard_query, escalate_overdue)
@@ -163,12 +164,15 @@ def assign_complaint(public_id):
     complaint.assigned_to_id = officer.id
     complaint.department = ((department or "").strip() or officer.department
                             or complaint.department)
-    if complaint.status in AUTO_ASSIGN_FROM:
+    status_changed = complaint.status in AUTO_ASSIGN_FROM
+    if status_changed:
         complaint.status = "Assigned"
         complaint.history.append(StatusHistory(
             status="Assigned", remarks=f"Assigned to {officer.name}",
             changed_by_id=actor.id))
     db.session.commit()
+    if status_changed:
+        notify_status_change(complaint)
     return jsonify(serialize_row(complaint))
 
 
@@ -221,6 +225,7 @@ def update_status(public_id):
     complaint.history.append(StatusHistory(
         status=new_status, remarks=remarks or None, changed_by_id=actor.id))
     db.session.commit()
+    notify_status_change(complaint)
     return jsonify(serialize_row(complaint))
 
 
