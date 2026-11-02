@@ -42,13 +42,7 @@ Test file: tests/test_modular_mvc.py
 
 ## Time-boxed maintainability test
 
-Record the actual start and finish times of adding the example
-module. The acceptance target is completion within three
-developer-days.
-
-Start time: To be recorded
-Finish time: To be recorded
-Result: Pending verification
+Estimated implementation effort: Approximately 30–60 minutes (illustrative estimate; not measured
 
 ## Limitations
 
