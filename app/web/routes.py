@@ -46,3 +46,8 @@ def register_page():
 @bp.get("/notifications")
 def notifications_page():
     return render_template("notifications.html")
+
+
+@bp.get("/reports")
+def reports_page():
+    return render_template("reports.html")
