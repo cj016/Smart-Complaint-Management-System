@@ -1,6 +1,7 @@
 from ..extensions import db
 from ..utils import utcnow
 from werkzeug.security import generate_password_hash, check_password_hash
+from ..crypto import EncryptedString, blind_index
 
 
 class Role:
@@ -16,7 +17,8 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(120), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False, index=True)
-    mobile = db.Column(db.String(20), unique=True)
+    mobile = db.Column(EncryptedString)  # encrypted at rest (NF-003)
+    mobile_hash = db.Column(db.String(64), unique=True, index=True)  # lookup / uniqueness
     password_hash = db.Column(db.String(255), nullable=False)  # never plaintext (F-003)
     role = db.Column(db.String(20), nullable=False, default=Role.COMPLAINANT)
     department = db.Column(db.String(100))
@@ -32,6 +34,10 @@ class User(db.Model):
 
     def set_password(self, plain):
         self.password_hash = generate_password_hash(plain)
+
+    def set_mobile(self, plain):
+        self.mobile = plain or None
+        self.mobile_hash = blind_index(plain) if plain else None
 
     def check_password(self, plain):
         return check_password_hash(self.password_hash, plain)
