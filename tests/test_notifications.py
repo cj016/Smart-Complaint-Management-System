@@ -15,6 +15,7 @@ def make_user(email, role=Role.COMPLAINANT):
         email=email,
         password_hash="test-hash",
         role=role,
+        is_verified=True,
     )
     db.session.add(user)
     db.session.commit()

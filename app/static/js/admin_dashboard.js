@@ -2,14 +2,12 @@
 // Expects the login page (SCMS-F-002) to store the JWT in localStorage under "scms_token".
 // The API enforces roles (SCMS-SR-002); this page only hides what a user cannot use.
 (function () {
-  var TOKEN_KEY = "scms_token";
   var API = "/api/v1/admin";
   var page = 1;
   var pages = 1;
   var selected = null; // the complaint row being managed
   var isAdmin = SCMS.getRole() === "Admin"; // only admins may assign (F-030)
-  var isAdmin = SCMS.getRole() === "Admin"; // only admins may assign (F-030)
-  var isAdmin = SCMS.getRole() === "Admin"; // only admins may assign (F-030)
+  $("dashboard-title").textContent = isAdmin ? "Admin dashboard" : "Officer dashboard";
 
   function $(id) { return document.getElementById(id); }
   var warning = $("login-warning");
@@ -27,10 +25,8 @@
   }
 
   function api(path, options) {
-    var token = localStorage.getItem(TOKEN_KEY);
-    options = options || {};
-    options.headers = Object.assign({ Authorization: "Bearer " + token }, options.headers);
-    return fetch(API + path, options).then(function (resp) {
+    // The shared helper clears ALL session keys and redirects to login on HTTP 401.
+    return SCMS.authFetch(API + path, options).then(function (resp) {
       return resp.json().then(function (body) {
         return { status: resp.status, body: body };
       });
@@ -90,7 +86,7 @@
   }
 
   function load() {
-    if (!localStorage.getItem(TOKEN_KEY)) {
+    if (!SCMS.getToken()) {
       showLogin("Please log in as an officer or admin to see this page.");
       return;
     }
@@ -109,7 +105,6 @@
     api("/complaints?" + params.toString())
       .then(function (r) {
         if (r.status === 401) {
-          localStorage.removeItem(TOKEN_KEY);
           showLogin("Your session has expired. Please log in again.");
           return;
         }
@@ -227,6 +222,6 @@
   $("prev-btn").addEventListener("click", function () { if (page > 1) { page -= 1; load(); } });
   $("next-btn").addEventListener("click", function () { if (page < pages) { page += 1; load(); } });
 
-  if (localStorage.getItem(TOKEN_KEY) && isAdmin) { loadOfficers(); }
+  if (SCMS.getToken() && isAdmin) { loadOfficers(); }
   load();
 })();
