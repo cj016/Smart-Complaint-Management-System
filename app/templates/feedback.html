@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Resolution Feedback{% endblock %}
+{% block content %}
+  <h1>Rate a complaint resolution</h1>
+  <p>You can provide one rating for your own complaint after it is Resolved.</p>
+  <div class="card">
+    <form id="feedback-form">
+      <label for="feedback-id">Complaint ID</label>
+      <input id="feedback-id" name="complaintId" type="text" maxlength="20"
+             placeholder="SCMS-2026-00042" required autocomplete="off">
+      <label for="feedback-rating">Rating</label>
+      <select id="feedback-rating" name="rating" required>
+        <option value="">Choose a rating</option>
+        <option value="1">1 - Very dissatisfied</option>
+        <option value="2">2 - Dissatisfied</option>
+        <option value="3">3 - Neutral</option>
+        <option value="4">4 - Satisfied</option>
+        <option value="5">5 - Very satisfied</option>
+      </select>
+      <label for="feedback-comment">Comment (optional, up to 1000 characters)</label>
+      <textarea id="feedback-comment" name="comment" maxlength="1000"></textarea>
+      <p id="feedback-message" role="status" aria-live="polite"></p>
+      <button id="feedback-submit" type="submit">Submit feedback</button>
+    </form>
+  </div>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/feedback.js') }}"></script>
+{% endblock %}

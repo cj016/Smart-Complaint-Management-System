@@ -59,6 +59,12 @@
     setText("result-priority", c.priority);
     setText("result-created", new Date(c.createdAt).toLocaleString());
     setText("result-updated", new Date(c.updatedAt).toLocaleString());
+    var feedbackCta = document.getElementById("feedback-cta");
+    var feedbackLink = document.getElementById("feedback-link");
+    feedbackCta.hidden = !(c.status === "Resolved" &&
+                           SCMS.getRole() === "Complainant");
+    feedbackLink.href = "/feedback?complaintId=" +
+      encodeURIComponent(c.complaintId);
     result.hidden = false;
   }
 

@@ -15,11 +15,15 @@
       <p>See where each of your complaints stands.</p>
       <a class="btn" href="{{ url_for('web.my_complaints') }}">My complaints</a>
       <a class="btn btn-secondary" href="{{ url_for('web.track') }}">Search by ID</a>
+      <a class="btn btn-secondary" href="{{ url_for('feedback.citizen_page') }}"
+         data-roles="Complainant" hidden>Rate a resolution</a>
     </section>
     <section class="card">
       <h2>For officers</h2>
       <p>Review, assign and resolve complaints from the dashboard.</p>
       <a class="btn btn-secondary" href="{{ url_for('web.admin_dashboard') }}">Admin dashboard</a>
+      <a class="btn btn-secondary" href="{{ url_for('feedback.admin_page') }}"
+         data-roles="Admin" hidden>View resolution feedback</a>
     </section>
   </div>
 {% endblock %}

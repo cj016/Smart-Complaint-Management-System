@@ -28,6 +28,11 @@
         <dt>Submitted</dt><dd id="result-created"></dd>
         <dt>Last updated</dt><dd id="result-updated"></dd>
       </dl>
+      <p id="feedback-cta" hidden>
+        <a id="feedback-link" class="btn" href="{{ url_for('feedback.citizen_page') }}">
+          Rate this resolution
+        </a>
+      </p>
       <h3>Status timeline</h3>
       <ol id="timeline" class="timeline" aria-label="Status timeline"></ol>
     </div>
