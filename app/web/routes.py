@@ -33,6 +33,11 @@ def admin_dashboard():
     return render_template("admin_dashboard.html")
 
 
+@bp.get("/admin/reports")
+def reports_page():
+    return render_template("reports.html")
+
+
 @bp.get("/login")
 def login_page():
     return render_template("login.html")
