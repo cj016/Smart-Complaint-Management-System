@@ -9,9 +9,12 @@ from flask import Blueprint, current_app, jsonify, request, send_file
 from flask_jwt_extended import get_jwt_identity, jwt_required
 from sqlalchemy.exc import IntegrityError
 
+from ..audit.services import record_audit
+from ..auth.decorators import roles_required
 from ..errors import error_response
 from ..extensions import db
 from ..models import Complaint, Role, StatusHistory, User
+from ..notifications.services import create_notification
 from .photos import MIME_TYPES, PhotoError, attach_photos, photo_path, remove_files
 from .services import generate_complaint_id
 from .validation import validate_complaint_fields, validation_error_response
@@ -80,6 +83,73 @@ def lodge_complaint():
         "createdAt": complaint.created_at.isoformat() + "Z",
         "photos": len(rows),
     }), 201
+
+
+# ---- SCMS-F024: a citizen reopens a resolved / closed complaint -------------------
+
+MAX_REOPEN_REASON = 2000
+
+
+@bp.post("/<public_id>/reopen")
+@roles_required(Role.COMPLAINANT)
+def reopen_complaint(public_id):
+    """Only the owner may reopen a Resolved/Closed complaint, with a reason."""
+    complaint = _find_complaint(public_id.strip().upper(), owner_only=True)
+    if complaint is None:
+        return _not_found()  # do not reveal someone else's complaint
+
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return error_response("VALIDATION_ERROR", "A JSON object is required.",
+                              {"field": "reason"}, 422)
+    reason = data.get("reason")
+    if not isinstance(reason, str) or not reason.strip():
+        return error_response("VALIDATION_ERROR", "Reopening reason is required.",
+                              {"field": "reason"}, 422)
+    reason = reason.strip()
+    if len(reason) > MAX_REOPEN_REASON:
+        return error_response("VALIDATION_ERROR", "Reason must be at most 2000 characters.",
+                              {"field": "reason"}, 422)
+
+    # A conditional UPDATE also prevents two near-simultaneous requests reopening
+    # the same resolved/closed state twice.
+    changed = db.session.execute(
+        db.update(Complaint)
+        .where(Complaint.id == complaint.id,
+               Complaint.status.in_(("Resolved", "Closed")))
+        .values(status="Reopened", resolved_at=None, resolution_remarks=None)
+    )
+    if changed.rowcount != 1:
+        db.session.rollback()
+        return error_response("CONFLICT", "Only Resolved or Closed complaints can be reopened.",
+                              {"status": complaint.status}, 409)
+
+    db.session.add(StatusHistory(
+        complaint_id=complaint.id,
+        status="Reopened",
+        remarks=reason,
+        changed_by_id=int(get_jwt_identity()),
+    ))
+    record_audit(int(get_jwt_identity()), "COMPLAINT_REOPENED",
+                 "Complaint", complaint.public_id, "Citizen reopened the complaint")
+    db.session.commit()
+
+    # Existing notification service creates in-app records (and configured
+    # email/SMS). Notify the assigned officer and all administrators, once each.
+    recipient_ids = set(db.session.scalars(
+        db.select(User.id).where(User.role == Role.ADMIN)
+    ).all())
+    if complaint.assigned_to_id is not None:
+        recipient_ids.add(complaint.assigned_to_id)
+    for recipient_id in sorted(recipient_ids):
+        create_notification(
+            recipient_id,
+            f"Complaint {complaint.public_id} was reopened by its citizen.",
+            complaint.id,
+        )
+
+    return jsonify({"complaintId": complaint.public_id, "status": "Reopened",
+                    "message": "Complaint reopened successfully."})
 
 
 # ---- SCMS-F013: photo evidence -------------------------------------------------------

@@ -26,6 +26,48 @@ def _serialize(notification):
     }
 
 
+@bp.get("/staff")
+@roles_required(Role.ADMIN, Role.OFFICER)
+def staff_notifications():
+    """The signed-in staff member's own in-app notifications (latest 30)."""
+    user_id = int(get_jwt_identity())
+    rows = db.session.scalars(
+        db.select(Notification)
+        .where(Notification.user_id == user_id, Notification.channel == "in_app")
+        .order_by(Notification.created_at.desc(), Notification.id.desc())
+        .limit(30)
+    ).all()
+    unread = db.session.scalar(
+        db.select(db.func.count(Notification.id)).where(
+            Notification.user_id == user_id,
+            Notification.channel == "in_app",
+            Notification.is_read.is_(False),
+        )
+    )
+    return jsonify({"items": [_serialize(item) for item in rows],
+                    "unreadCount": unread or 0})
+
+
+@bp.patch("/staff/<int:notification_id>/read")
+@roles_required(Role.ADMIN, Role.OFFICER)
+def staff_mark_read(notification_id):
+    """Mark only this staff user's own in-app notification as read."""
+    user_id = int(get_jwt_identity())
+    notification = db.session.scalar(
+        db.select(Notification).where(
+            Notification.id == notification_id,
+            Notification.user_id == user_id,
+            Notification.channel == "in_app",
+        )
+    )
+    if notification is None:
+        return error_response("NOT_FOUND", "Notification not found.", status=404)
+    if not notification.is_read:
+        notification.is_read = True
+        db.session.commit()
+    return jsonify(_serialize(notification))
+
+
 @bp.get("/ping")
 def ping():
     return jsonify({

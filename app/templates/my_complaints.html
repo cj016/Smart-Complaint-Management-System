@@ -27,12 +27,23 @@
         <thead>
           <tr>
             <th>Complaint ID</th><th>Category</th><th>Location</th>
-            <th>Status</th><th>Submitted</th>
+            <th>Status</th><th>Submitted</th><th>Action</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </div>
+
+    <section id="reopen-panel" class="card" hidden>
+      <h2>Reopen complaint <span id="reopen-id"></span></h2>
+      <form id="reopen-form">
+        <label for="reopen-reason">Reason for reopening (required)</label>
+        <textarea id="reopen-reason" maxlength="2000" required rows="3"></textarea>
+        <button id="reopen-submit" type="submit">Reopen complaint</button>
+        <button id="reopen-cancel" type="button" class="btn-secondary">Cancel</button>
+      </form>
+      <p id="reopen-message" role="status"></p>
+    </section>
 
     <div>
       <button id="prev-btn" type="button">Previous</button>
