@@ -15,6 +15,11 @@
   var prevBtn = document.getElementById("prev-btn");
   var nextBtn = document.getElementById("next-btn");
   var pageInfo = document.getElementById("page-info");
+  var reopenPanel = document.getElementById("reopen-panel");
+  var reopenForm = document.getElementById("reopen-form");
+  var reopenReason = document.getElementById("reopen-reason");
+  var reopenMessage = document.getElementById("reopen-message");
+  var reopenId = null;
 
   function slug(status) {
     return status.toLowerCase().replace(/\s+/g, "-");
@@ -34,6 +39,7 @@
     pages = 1;
     prevBtn.disabled = true;
     nextBtn.disabled = true;
+    reopenPanel.hidden = true;
   }
 
   function showLoginWarning() {
@@ -62,6 +68,16 @@
     }
   }
 
+  function openReopenPanel(complaintId) {
+    reopenId = complaintId;
+    document.getElementById("reopen-id").textContent = complaintId;
+    reopenMessage.textContent = "";
+    reopenReason.value = "";
+    reopenForm.hidden = false;
+    reopenPanel.hidden = false;
+    reopenReason.focus();
+  }
+
   function render(items) {
     tbody.replaceChildren();
 
@@ -83,6 +99,19 @@
         : "";
 
       tr.appendChild(cell(submitted));
+
+      var actions = document.createElement("td");
+      if (complaint.status === "Resolved" || complaint.status === "Closed") {
+        var reopenBtn = document.createElement("button");
+        reopenBtn.type = "button";
+        reopenBtn.textContent = "Reopen";
+        reopenBtn.setAttribute("aria-label", "Reopen " + complaint.complaintId);
+        reopenBtn.addEventListener("click", function () {
+          openReopenPanel(complaint.complaintId);
+        });
+        actions.appendChild(reopenBtn);
+      }
+      tr.appendChild(actions);
       tbody.appendChild(tr);
     });
   }
@@ -168,6 +197,61 @@
         }
       });
   }
+
+  document.getElementById("reopen-cancel").addEventListener("click", function () {
+    reopenPanel.hidden = true;
+    reopenId = null;
+  });
+
+  reopenForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var token = SCMS.getToken();
+    if (!token) {
+      handleExpiredSession();
+      return;
+    }
+    var reason = reopenReason.value.trim();
+    if (!reason) {
+      reopenMessage.textContent = "Please enter a reason for reopening.";
+      return;
+    }
+    var complaintId = reopenId;
+    var submit = document.getElementById("reopen-submit");
+    submit.disabled = true;
+    reopenMessage.textContent = "Reopening complaint...";
+
+    fetch("/api/v1/complaints/" + encodeURIComponent(complaintId) + "/reopen", {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + token,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ reason: reason })
+    }).then(function (response) {
+      if (response.status === 401) {
+        handleExpiredSession();
+        return null;
+      }
+      return response.json().then(function (data) {
+        return { ok: response.ok, data: data };
+      });
+    }).then(function (result) {
+      if (!result || token !== SCMS.getToken()) { return; }
+      if (!result.ok) {
+        reopenMessage.textContent = SCMS.errorText(result.data, "Could not reopen complaint.");
+        return;
+      }
+      reopenForm.hidden = true;
+      reopenMessage.textContent = "Complaint reopened. Check its updated status and timeline.";
+      load();
+    }).catch(function () {
+      if (token === SCMS.getToken()) {
+        reopenMessage.textContent = "Could not reopen complaint. Try again.";
+      }
+    }).finally(function () {
+      submit.disabled = false;
+    });
+  });
 
   filter.addEventListener("change", function () {
     page = 1;
