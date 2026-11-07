@@ -1,4 +1,4 @@
-﻿"""SCMS-NF005 / TC-Scale-01: Simple 10x dataset scalability test."""
+"""SCMS-NF005 / TC-Scale-01: Simple 10x dataset scalability test."""
 
 import math
 import time
@@ -57,12 +57,14 @@ def test_ten_times_dataset_has_acceptable_degradation(client, app):
             email="scale-admin@example.com",
             password_hash="test-hash",
             role=Role.ADMIN,
+            is_verified=True,
         )
         citizen = User(
             name="Scale Citizen",
             email="scale-citizen@example.com",
             password_hash="test-hash",
             role=Role.COMPLAINANT,
+            is_verified=True,
         )
         db.session.add_all([admin, citizen])
         db.session.commit()

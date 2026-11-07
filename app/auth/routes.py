@@ -150,6 +150,10 @@ def me():
     user = db.session.get(User, int(get_jwt_identity()))
     if not user:
         return jsonify(error="User not found"), 404
+    if not user.is_verified:
+        return jsonify(error="Account not verified"), 403
+    if user.locked_until and user.locked_until > utcnow():
+        return jsonify(error="Account locked"), 423
     return jsonify(id=user.id, name=user.name, email=user.email,
                    role=user.role, department=user.department), 200
 
