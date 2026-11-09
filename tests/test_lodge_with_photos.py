@@ -21,7 +21,8 @@ def png(name="a.png"):
 @pytest.fixture()
 def citizen(app, tmp_path):
     app.config["UPLOAD_FOLDER"] = str(tmp_path)
-    user = User(name="Asha", email="asha@example.com", password_hash="x")
+    user = User(name="Asha", email="asha@example.com", password_hash="x",
+                is_verified=True)
     db.session.add(user)
     db.session.commit()
     return user
