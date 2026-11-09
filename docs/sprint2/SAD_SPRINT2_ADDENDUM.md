@@ -1,6 +1,6 @@
-# SCMS SAD v1.0 - Sprint 2 proposed architecture/API addendum (DRAFT)
+# SCMS SAD v1.0 - Sprint 2 implemented architecture/API addendum
 
-**Issue:** #30 (T-04) | **Status:** provisional, pending merge and review
+**Issue:** #30 (T-04) | **Status:** merged and automated integration-tested; QA review pending
 
 ## Reference
 
@@ -13,7 +13,7 @@ Supplements the submitted SAD v1.0 **Section 3.4** (components), **Section 4.3**
 - **F041 / FeedbackModule:** `app/feedback/routes.py` uses existing `Feedback` and `Complaint` models; `feedback.html` and `admin_feedback.html` plus corresponding JS support citizen submission and Admin review.
 - **F042 / ReportingModule:** `app/reporting/routes.py` aggregates complaints; `reports.html` and `reports.js` show filtering, counts, turnaround, and CSV export.
 
-## Proposed endpoint inventory
+## Implemented endpoint inventory
 
 | Requirement | Method and endpoint | Access | Purpose / main constraint |
 |---|---|---|---|
@@ -42,4 +42,4 @@ The **date range filters submission timestamps** (`Complaint.created_at`). The t
 
 ## Integration/architecture limitations
 
-At draft time #97, #98 and #99 are independent, unmerged PRs and their route changes have not been tested together on `main`. Routes and shared navigation touched by multiple PRs require conflict review. Staff notifications use existing delivery integrations when configured; do not claim external email/SMS delivery was demonstrated. Deployment TLS, load targets, and QA sign-off are outside this feature-branch evidence.
+PRs #97, #98 and #99 are merged. The integrated documentation branch passed 411 automated tests and Flake8 on 9 November 2026. These results do not replace combined manual browser UAT. Staff notifications use existing delivery integrations when configured; external email/SMS delivery was not demonstrated by this evidence. Deployment TLS, load targets, and QA sign-off remain outside this automated verification.

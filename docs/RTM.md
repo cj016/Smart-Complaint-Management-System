@@ -4,7 +4,7 @@ Replaces the status column of SRS section 8 (see docs/DEVIATIONS.md). Generated 
 
 Status: **N** = not tested, **P** = passed, **F** = a mapped test failed, **A** = tested and approved (set by the QA Lead after sign-off).
 
-Last run: 2026-11-02. Full suite: `212 passed in 4.70s`. Requirements: 20 passed, 0 failed, 13 not tested (of 33).
+Last run: 2026-11-09. Full suite: `411 passed in 21.82s`. Requirements: 23 passed, 0 failed, 10 not tested (of 33).
 
 | Req ID | Requirement (short) | Test case(s) | Status | Comments / evidence |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@ Last run: 2026-11-02. Full suite: `212 passed in 4.70s`. Requirements: 20 passed
 | SCMS-F-021 | Track complaint status by account | TC-Track-02 | P | tests/test_tracking_by_account.py |
 | SCMS-F-022 | View complaint status timeline | TC-Track-03 | P | tests/test_tracking_timeline.py |
 | SCMS-F-023 | In-app / email-SMS status notifications | TC-Track-04 | N | No automated test yet |
-| SCMS-F-024 | Reopen resolved or closed complaint | TC-Track-05 | N | No automated test yet |
+| SCMS-F-024 | Reopen resolved or closed complaint | TC-Track-05 | P | tests/test_f024_reopen.py |
 | SCMS-F-030 | Assign complaint to officer | TC-Admin-01 | P | tests/test_admin_assign.py |
 | SCMS-F-031 | View all complaints in admin dashboard | TC-Admin-02 | P | tests/test_admin_dashboard.py |
 | SCMS-F-032 | Filter/sort complaints by category, priority, status | TC-Admin-03 | P | tests/test_admin_dashboard.py |
@@ -28,8 +28,8 @@ Last run: 2026-11-02. Full suite: `212 passed in 4.70s`. Requirements: 20 passed
 | SCMS-F-034 | Auto-escalate overdue complaints (SLA) | TC-Admin-05 | P | tests/test_admin_escalation.py |
 | SCMS-F-035 | Reassign complaint to different officer/dept. | TC-Admin-06 | P | tests/test_admin_reassign.py |
 | SCMS-F-040 | Send status-change notification | TC-Notify-01 | N | No automated test yet |
-| SCMS-F-041 | Rate resolution and give feedback | TC-Feedback-01 | N | No automated test yet |
-| SCMS-F-042 | Generate category/department-wise reports | TC-Report-01 | N | No automated test yet |
+| SCMS-F-041 | Rate resolution and give feedback | TC-Feedback-01 | P | tests/test_f041_feedback.py |
+| SCMS-F-042 | Generate category/department-wise reports | TC-Report-01 | P | tests/test_f042_reports.py |
 | SCMS-NF-001 | Dashboard response time target | TC-Perf-01 | P | pytest timing test, see DEVIATIONS.md (tests/test_dashboard_performance.py) |
 | SCMS-NF-002 | 99.5% monthly uptime | Ops reports | N | Measured by monitoring after deployment |
 | SCMS-NF-003 | Encryption of PII | TC-Sec-02 | N | No automated test yet |

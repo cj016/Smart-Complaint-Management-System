@@ -1,10 +1,10 @@
-# SCMS SRS v1.0 - Sprint 2 proposed addendum (DRAFT)
+# SCMS SRS v1.0 - Sprint 2 implemented addendum
 
-**Issue:** #30 (T-04) | **Status:** provisional, pending merge and QA review
+**Issue:** #30 (T-04) | **Status:** merged and integration-tested; QA approval pending
 
 ## Purpose and cross-reference
 
-This addendum expands the existing requirements in the submitted SRS v1.0, **Section 4.3** (Complaint Tracking & Status Updates), **Section 4.5** (Notifications, Feedback & Reporting), and **Section 8** (RTM). It does **not** change the original submitted PDF. The SRS already lists the status `Reopened` and requirement IDs SCMS-F-024, SCMS-F-041 and SCMS-F-042; the following records the implemented details subject to integration verification.
+This addendum expands the existing requirements in the submitted SRS v1.0, **Section 4.3** (Complaint Tracking & Status Updates), **Section 4.5** (Notifications, Feedback & Reporting), and **Section 8** (RTM). It does **not** change the original submitted PDF. The SRS already lists the status `Reopened` and requirement IDs SCMS-F-024, SCMS-F-041 and SCMS-F-042; the following records the implemented details verified by the integrated automated suite on 9 November 2026.
 
 ## SCMS-F-024 - Reopen resolved/closed complaints (Issue #27, PR #97)
 
@@ -18,7 +18,7 @@ This addendum expands the existing requirements in the submitted SRS v1.0, **Sec
 - Repeated reopening and reopening from any other status are rejected. Requests for complaints not owned by the citizen are not disclosed (404 response).
 - The Citizen's My Complaints page offers the reopening action when eligible; tracking timeline shows the new status event.
 
-**Acceptance evidence:** `tests/test_f024_reopen.py` on the F024 branch; nine browser checks manually reported passed. Not yet integrated/approved.
+**Acceptance evidence:** `tests/test_f024_reopen.py` on the F024 branch; nine browser checks manually reported passed. Integrated automated tests passed; QA approval remains pending.
 
 ## SCMS-F-041 - Rate resolution and give feedback (Issue #28, PR #98)
 
@@ -30,7 +30,7 @@ This addendum expands the existing requirements in the submitted SRS v1.0, **Sec
 - Duplicate, invalid or out-of-status submissions are rejected; other citizens' complaints are not disclosed.
 - Admins can view submitted ratings/comments via a protected API and Admin feedback webpage; Officer/Citizen accounts cannot retrieve the Admin feedback API.
 
-**Acceptance evidence:** `tests/test_f041_feedback.py` on the F041 branch; seven browser checks manually reported passed. Not yet integrated/approved.
+**Acceptance evidence:** `tests/test_f041_feedback.py` on the F041 branch; seven browser checks manually reported passed. Integrated automated tests passed; QA approval remains pending.
 
 ## SCMS-F-042 - Category/department reports (Issue #29, PR #99)
 
@@ -43,8 +43,8 @@ This addendum expands the existing requirements in the submitted SRS v1.0, **Sec
 - Admin can export the selected summary as CSV. Reports do not need to expose citizen names, contact details, locations or complaint descriptions.
 - Citizens and Officers cannot access the protected report endpoints.
 
-**Acceptance evidence:** `tests/test_f042_reports.py` on the F042 branch; eight browser checks manually reported passed. Not yet integrated/approved.
+**Acceptance evidence:** `tests/test_f042_reports.py` on the F042 branch; eight browser checks manually reported passed. Integrated automated tests passed; QA approval remains pending.
 
-## Outstanding approval
+## Integrated verification and outstanding approval
 
-All three requirements remain **feature-branch verified, not integrated or QA approved** at the time of this draft. The authoritative acceptance result must be updated after feature PRs merge and the combined system is retested.
+PRs #97, #98 and #99 are merged. On 9 November 2026, the combined automated suite reported **411 passed**, Flake8 passed, and all three mapped RTM requirements were marked **P**. See `INTEGRATION_TEST_RESULTS.md` and `../RTM.md`. These are automated results, not a signed combined browser UAT or QA Lead approval.
