@@ -38,11 +38,10 @@ var SCMS = (function () {
   }
 
   function logout() {
-    var done = function () { clear(); window.location.href = "/login"; };
-    if (!getToken()) { return done(); }
-    fetch("/api/v1/auth/logout", {
-      method: "POST", headers: { Authorization: "Bearer " + getToken() }
-    }).then(done, done);
+    // JWTs are stateless on this server; removing the local token logs out this browser.
+    // Do not wait for the network before clearing it.
+    clear();
+    window.location.href = "/login";
   }
 
   // Role-based navigation. Cosmetic only; the server enforces access (roles_required).

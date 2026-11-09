@@ -58,6 +58,7 @@ def register_blueprints(app):
     from .admin.routes import bp as admin_bp
     from .auth.routes import bp as auth_bp
     from .complaints.routes import bp as complaints_bp
+    from .feedback.routes import bp as feedback_bp
     from .health import bp as health_bp
     from .notifications.routes import bp as notifications_bp
     from .reporting.routes import bp as reporting_bp
@@ -68,6 +69,7 @@ def register_blueprints(app):
     app.register_blueprint(health_bp)
     app.register_blueprint(auth_bp, url_prefix="/api/v1/auth")
     app.register_blueprint(complaints_bp, url_prefix="/api/v1/complaints")
+    app.register_blueprint(feedback_bp)
     app.register_blueprint(tracking_bp, url_prefix="/api/v1/tracking")
     app.register_blueprint(admin_bp, url_prefix="/api/v1/admin")
     app.register_blueprint(audit_bp, url_prefix="/api/v1/audit")

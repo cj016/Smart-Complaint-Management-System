@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Resolution Ratings{% endblock %}
+{% block content %}
+  <h1>Resolution ratings and feedback</h1>
+  <p>Submitted citizen ratings for resolved complaints.</p>
+  <p id="feedback-list-message" role="status"></p>
+  <div class="table-wrap">
+    <table id="feedback-table">
+      <thead>
+        <tr><th>Complaint ID</th><th>Category</th><th>Status</th>
+            <th>Rating</th><th>Comment</th><th>Submitted</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <button id="feedback-prev" type="button">Previous</button>
+  <span id="feedback-page-info"></span>
+  <button id="feedback-next" type="button">Next</button>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/admin_feedback.js') }}"></script>
+{% endblock %}
