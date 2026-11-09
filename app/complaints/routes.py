@@ -5,16 +5,20 @@ SCMS-F-010: POST /api/v1/complaints  - a logged-in citizen lodges a new complain
 SCMS-F-013: POST/GET /api/v1/complaints/<id>/photos[/<photo_id>] - photo evidence.
 All endpoints require: Authorization: Bearer <JWT>
 """
+from datetime import timedelta
+
 from flask import Blueprint, current_app, jsonify, request, send_file
 from flask_jwt_extended import get_jwt_identity, jwt_required
 from sqlalchemy.exc import IntegrityError
 
+from ..admin.services import sla_hours
 from ..audit.services import record_audit
 from ..auth.decorators import roles_required
 from ..errors import error_response
 from ..extensions import db
 from ..models import Complaint, Role, StatusHistory, User
 from ..notifications.services import create_notification
+from ..utils import utcnow
 from .photos import MIME_TYPES, PhotoError, attach_photos, photo_path, remove_files
 from .services import generate_complaint_id
 from .validation import validate_complaint_fields, validation_error_response
@@ -37,7 +41,7 @@ def handle_photo_error(exc):
 # ---- SCMS-F010: lodge a complaint ----------------------------------------------------
 
 @bp.post("")
-@jwt_required()
+@roles_required(Role.COMPLAINANT)
 def lodge_complaint():
     user = db.session.get(User, int(get_jwt_identity()))
     if user is None:
@@ -111,13 +115,16 @@ def reopen_complaint(public_id):
         return error_response("VALIDATION_ERROR", "Reason must be at most 2000 characters.",
                               {"field": "reason"}, 422)
 
+    # Reopening starts a fresh SLA clock, without changing the original complaint ID.
+    now = utcnow()
+    new_sla_due = now + timedelta(hours=sla_hours(complaint.priority))
     # A conditional UPDATE also prevents two near-simultaneous requests reopening
     # the same resolved/closed state twice.
     changed = db.session.execute(
         db.update(Complaint)
         .where(Complaint.id == complaint.id,
                Complaint.status.in_(("Resolved", "Closed")))
-        .values(status="Reopened", resolved_at=None, resolution_remarks=None)
+        .values(status="Reopened", resolved_at=None, sla_due_at=new_sla_due)
     )
     if changed.rowcount != 1:
         db.session.rollback()
@@ -142,11 +149,17 @@ def reopen_complaint(public_id):
     if complaint.assigned_to_id is not None:
         recipient_ids.add(complaint.assigned_to_id)
     for recipient_id in sorted(recipient_ids):
-        create_notification(
-            recipient_id,
-            f"Complaint {complaint.public_id} was reopened by its citizen.",
-            complaint.id,
-        )
+        try:
+            create_notification(
+                recipient_id,
+                f"Complaint {complaint.public_id} was reopened by its citizen.",
+                complaint.id,
+            )
+        except Exception:
+            # Reopen and audit were already committed. Avoid reporting a false
+            # failure/encouraging a duplicate retry because notification failed.
+            db.session.rollback()
+            current_app.logger.exception("Reopen staff notification failed")
 
     return jsonify({"complaintId": complaint.public_id, "status": "Reopened",
                     "message": "Complaint reopened successfully."})
