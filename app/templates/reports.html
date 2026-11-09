@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Resolution Reports{% endblock %}
+{% block content %}
+  <h1>Resolution reports</h1>
+  <p>Admin-only reports, grouped by category, department and current status.</p>
+  <p>Dates filter complaints by their <strong>submission date</strong> (inclusive).</p>
+  <p id="report-message" role="status"></p>
+
+  <section id="report-content" hidden>
+    <form id="report-filters" class="card">
+      <label for="start-date">Submitted on or after</label>
+      <input id="start-date" type="date">
+      <label for="end-date">Submitted on or before</label>
+      <input id="end-date" type="date">
+      <button type="submit">Apply filters</button>
+      <button type="button" class="btn-secondary" id="clear-filters">Clear dates</button>
+      <button type="button" class="btn-secondary" id="export-csv">Export CSV</button>
+    </form>
+    <section class="card">
+      <h2>Overview</h2>
+      <p><strong>Total complaints:</strong> <span id="total-complaints">0</span></p>
+      <p><strong>Average turnaround:</strong> <span id="average-turnaround">N/A</span></p>
+      <p id="sample-note">Calculated for currently Resolved/Closed complaints with valid
+         resolution timestamps, from submission to recorded resolution.</p>
+    </section>
+    <div class="grid grid-3">
+      <section class="card">
+        <h2>By category</h2>
+        <div class="table-wrap"><table id="category-table">
+          <thead><tr><th>Category</th><th>Complaints</th></tr></thead><tbody></tbody>
+        </table></div>
+      </section>
+      <section class="card">
+        <h2>By department</h2>
+        <div class="table-wrap"><table id="department-table">
+          <thead><tr><th>Department</th><th>Complaints</th></tr></thead><tbody></tbody>
+        </table></div>
+      </section>
+      <section class="card">
+        <h2>By current status</h2>
+        <div class="table-wrap"><table id="status-table">
+          <thead><tr><th>Status</th><th>Complaints</th></tr></thead><tbody></tbody>
+        </table></div>
+      </section>
+    </div>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/reports.js') }}"></script>
+{% endblock %}

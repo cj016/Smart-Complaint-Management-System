@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Staff Notifications{% endblock %}
+{% block content %}
+  <h1>Staff Notifications</h1>
+  <p>Reopened complaints and other updates for your staff account.</p>
+  <p id="staff-notifications-message" role="status"></p>
+  <section id="staff-notifications-section" hidden>
+    <p>Unread: <span id="staff-unread-count">0</span></p>
+    <ul id="staff-notifications-list"></ul>
+  </section>
+{% endblock %}
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/staff_notifications.js') }}"></script>
+{% endblock %}

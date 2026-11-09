@@ -14,14 +14,16 @@ from dotenv import load_dotenv  # noqa: E402
 
 load_dotenv()
 
-from flask_jwt_extended import create_access_token  # noqa: E402
-
 from app import create_app  # noqa: E402
 from app.extensions import db  # noqa: E402
 from app.models import Complaint, Role, StatusHistory, User  # noqa: E402
 from app.utils import utcnow  # noqa: E402
 
-PASSWORD = "Demo@12345"
+PASSWORD = os.getenv("SCMS_DEMO_PASSWORD")
+if os.getenv("APP_ENV", "development") != "development":
+    raise SystemExit("Demo seeding is allowed only in APP_ENV=development.")
+if not PASSWORD or len(PASSWORD) < 12:
+    raise SystemExit("Set SCMS_DEMO_PASSWORD (12+ characters) in your local environment.")
 
 USERS = [
     ("admin@scms.test", "Demo Admin", Role.ADMIN, None),
@@ -82,17 +84,6 @@ with app.app_context():
         db.session.add(complaint)
     db.session.commit()
 
-    def token_for(email):
-        user = people[email]
-        return create_access_token(identity=str(user.id),
-                                   additional_claims={"role": user.role})
-
-    print("\nDemo data ready. All demo accounts use password:", PASSWORD)
-    print("Open http://127.0.0.1:5000/admin, press F12 (or Option+Cmd+I), and in the Console")
-    print("run ONE of these, then reload the page. Tokens are valid for 1 hour.\n")
-    print("ADMIN (can assign):")
-    print(f'localStorage.setItem("scms_token", "{token_for("admin@scms.test")}")\n')
-    print("OFFICER (cannot assign, can update own complaints):")
-    print(f'localStorage.setItem("scms_token", "{token_for("officer1@scms.test")}")\n')
-    print("CITIZEN (for the timeline on /track):")
-    print(f'localStorage.setItem("scms_token", "{token_for("citizen@scms.test")}")\n')
+    print("Open http://127.0.0.1:5000/login and sign in normally.")
+    print("Fixed demo admin email: admin@scms.test")
+    print("Never commit the password or JWT tokens to Git.")

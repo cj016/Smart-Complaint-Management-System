@@ -11,6 +11,11 @@ def create_app(config_name=None):
     config_name = config_name or os.getenv("APP_ENV", "development")
     app = Flask(__name__)
     app.config.from_object(config_by_name[config_name])
+    if config_name == "production":
+        if (not os.getenv("SECRET_KEY") or not os.getenv("JWT_SECRET_KEY")
+                or os.getenv("SECRET_KEY") == "dev-secret-key-change-me-0123456789"
+                or os.getenv("JWT_SECRET_KEY") == "dev-jwt-secret-change-me-0123456789"):
+            raise RuntimeError("Production requires non-demo SECRET_KEY and JWT_SECRET_KEY")
 
     db.init_app(app)
     migrate.init_app(app, db)
