@@ -49,11 +49,18 @@ def _issue_otp(user):
 
 @bp.post("/register")
 def register():
-    data = request.get_json(silent=True) or {}
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify(error="A JSON object is required"), 400
     name = clean_text(data.get("name"), 120) or ""
-    email = (data.get("email") or "").strip().lower()
-    mobile = (data.get("mobile") or "").strip() or None
-    password = data.get("password") or ""
+    raw_email = data.get("email")
+    email = raw_email.strip().lower() if isinstance(raw_email, str) else ""
+    raw_mobile = data.get("mobile")
+    if raw_mobile is not None and not isinstance(raw_mobile, str):
+        return jsonify(error="Mobile must be text"), 400
+    mobile = raw_mobile.strip() or None if isinstance(raw_mobile, str) else None
+    password = data.get("password")
+    password = password if isinstance(password, str) else ""
 
     if not name or not EMAIL_RE.match(email) or len(password) < 8:
         return jsonify(error="Name, valid email and password (min 8 chars) required"), 400
@@ -86,8 +93,11 @@ def register():
 
 @bp.post("/verify-otp")
 def verify_otp():
-    data = request.get_json(silent=True) or {}
-    email = (data.get("email") or "").strip().lower()
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify(error="A JSON object is required"), 400
+    raw_email = data.get("email")
+    email = raw_email.strip().lower() if isinstance(raw_email, str) else ""
     user = User.query.filter_by(email=email).first()
     otp = (
         OtpCode.query.filter_by(user_id=user.id, used=False)
@@ -106,8 +116,11 @@ def verify_otp():
 
 @bp.post("/resend-otp")
 def resend_otp():
-    data = request.get_json(silent=True) or {}
-    email = (data.get("email") or "").strip().lower()
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify(error="A JSON object is required"), 400
+    raw_email = data.get("email")
+    email = raw_email.strip().lower() if isinstance(raw_email, str) else ""
     user = User.query.filter_by(email=email).first()
     if user and not user.is_verified:
         _issue_otp(user)
@@ -116,14 +129,19 @@ def resend_otp():
 
 @bp.post("/login")
 def login():
-    data = request.get_json(silent=True) or {}
-    email = (data.get("email") or "").strip().lower()
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify(error="A JSON object is required"), 400
+    raw_email = data.get("email")
+    email = raw_email.strip().lower() if isinstance(raw_email, str) else ""
     user = User.query.filter_by(email=email).first()
 
     if user and user.locked_until and user.locked_until > utcnow():
         return jsonify(error="Account locked. Try again later."), 423
 
-    if not user or not user.check_password(data.get("password") or ""):
+    candidate = data.get("password")
+    candidate = candidate if isinstance(candidate, str) else ""
+    if not user or not user.check_password(candidate):
         if user:
             user.failed_login_count += 1
             if user.failed_login_count >= MAX_ATTEMPTS:

@@ -15,7 +15,9 @@ def roles_required(*roles):
         def decorated(*args, **kwargs):
             verify_jwt_in_request()  # 401 if the token is missing or invalid
             user = db.session.get(User, int(get_jwt_identity()))
-            if not user or not user.is_verified or user.role not in roles:
+            if user is None:
+                return jsonify(error="Account not found"), 401
+            if not user.is_verified or user.role not in roles:
                 return jsonify(error="Forbidden"), 403
             if user.locked_until and user.locked_until > utcnow():
                 return jsonify(error="Account locked"), 423
