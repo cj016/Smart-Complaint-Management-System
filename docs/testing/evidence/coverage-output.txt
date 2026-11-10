@@ -1,0 +1,1869 @@
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 49%]
+........................................................................ [ 65%]
+........................................................................ [ 82%]
+........................................................................ [ 98%]
+.....C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584B1F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D45848D60>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D45834F40>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E3970>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457AD3F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CC4F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CC9A0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BFF10>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75F1F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D060220>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FBD30>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F94E0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BF1F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BF010>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BE200>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75EA70>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D46936A70>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D46935210>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D46937A60>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D46934A90>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D469362F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584A110>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584B100>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584BE20>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584B5B0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584A7A0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D458497B0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E1F30>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E0B80>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E0130>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E2980>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F85E0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F86D0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE484F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE486D0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE4A980>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA247C0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CCD60>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CD8A0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D069E40>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06A2F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06B100>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CE980>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE4B5B0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D060A90>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433122F0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43313010>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433132E0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43312F20>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D069210>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43310E50>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43313E20>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43312110>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\coverage\bytecode.py:27: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433108B0>
+  code = compile(text, filename or "<string>", "exec", dont_inherit=True)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+                                                                    [100%]
+============================== warnings summary ===============================
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CAC6F20>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9CA90>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9DE40>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9F880>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9FF10>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE489A0>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE49300>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_assign.py::test_bad_officer_id_is_422[99999]
+  C:\Python313\Lib\ast.py:295: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE49C60>
+    yield item
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CA15F30>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9EC50>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE4B1F0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE4A2F0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC03A60>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9F3D0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9E980>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9D210>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9C4F0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CA15A80>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D068B80>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06A020>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06AC50>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B0400>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B15D0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B1990>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B2110>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B2890>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CC400>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CD120>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CE020>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CF100>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CF4C0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E9120>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E98A0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3EA6B0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3EB4C0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CC220>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CCF40>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CD4E0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CE5C0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CF010>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CF3D0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F6607C0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F6618A0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F662200>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F662F20>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F663C40>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75C7C0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75CE50>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75D990>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75DD50>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75E4D0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75F4C0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8D84F0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8D98A0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8DA200>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8DAE30>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8DB790>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA24130>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA24F40>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA25300>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA25A80>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA26A70>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA27A60>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7C400>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7D7B0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7E7A0>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7F100>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7FA60>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admin_status.py::test_invalid_transition_is_409[In Progress-Reopened]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\sql\visitors.py:116: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC90400>
+    def _compiler_dispatch(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE49210>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06B4C0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B32E0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CFF10>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC03C40>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CAC6D40>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75CB80>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75D210>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CD990>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA249A0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9E020>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7EA70>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7D3F0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7D990>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA273D0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA27100>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA271F0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA26110>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA25030>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3C5FBD30>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8DA110>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8D8E50>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75E3E0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75DA80>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75D300>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F663A60>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F663790>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F661030>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CEF20>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CEB60>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CDB70>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CC130>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3EBB50>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3EB880>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E9300>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E97B0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CFA60>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CDC60>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CEE30>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CDA80>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CD030>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B1E40>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B3880>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B26B0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B18A0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06B1F0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06BE20>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D069C60>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D069B70>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D068E50>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0605E0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC03D30>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CAC67A0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9C130>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC91030>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9F2E0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC92F20>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F487C0>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f024_reopen.py::test_staff_cannot_reopen[officer]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py:575: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F49C60>
+    ctr = cls.__dict__.get("__init__", False)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7D120>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA272E0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA26F20>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F661120>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F6631F0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CDE40>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CC7C0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06B010>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9C5E0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC92C50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9EE30>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC934C0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC93970>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC918A0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7F790>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7E2F0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA26980>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8DB3D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8D8040>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8DAF20>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8D9120>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75D5D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F75F880>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F6616C0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CCE50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CE4D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E9D50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E9210>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3E9E40>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CCE50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CF6A0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06A200>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06B3D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06BD30>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B1B70>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B2A70>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE49030>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE48E50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CE4A020>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F496C0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F48310>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F4B4C0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DCF40>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DE200>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DEB60>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DC220>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DF3D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43310310>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43310C70>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433115D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43311F30>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43312890>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43312C50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433134C0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BC040>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BE4D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BEC50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BF3D0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F8A90>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F9210>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F9990>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FA110>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FA980>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FAD40>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FB100>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F8E50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FBE20>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F45E0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F4F40>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F5D50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_f042_reports.py::test_submission_date_filters[/api/v1/reports/summary?start_date=2026-05-10&end_date=2026-05-10-2]
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\cursor.py:372: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F6C50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F49E40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D060400>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FA27F10>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CDE40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E3EA110>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B3A60>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F4A7A0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DF4C0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433131F0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BF790>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FB790>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F5990>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F55D0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BE890>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BC7C0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433118A0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43312980>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43312200>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43311B70>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D43310130>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DE110>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DC040>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DD7B0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D431DD4E0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F4B010>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F4B880>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F48F40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F4A890>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D445F6B60>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D41F49A80>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06AB60>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06A890>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B0130>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B31F0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D0B0E50>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CFC40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CD8A0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CDF30>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E1CD5D0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3E4CC6D0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F8D85E0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7E3E0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC909A0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FC93E20>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7DC60>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3F660C70>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9F5B0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9DF30>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9EF20>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CC9D6C0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CA15D50>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FBF10>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444FA020>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F95D0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F9E40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D444F89A0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457ACF40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457AD6C0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457AE2F0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457AED40>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E1120>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D457E24D0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D45834C70>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D45837010>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D458494E0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584A020>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584BA60>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D469348B0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D469355D0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D46937970>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D469684F0>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_photo_attachments.py::test_owner_can_list_and_download
+  C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\sqlalchemy\engine\result.py:171: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D46969300>
+    return operator.itemgetter(index)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.13.7-final-0 _______________
+
+Name                                 Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------
+app\__init__.py                         53      6      6      2    83%   15-18, 42-47
+app\admin\__init__.py                    0      0      0      0   100%
+app\admin\routes.py                    173      4     66      3    97%   67, 154, 275, 279
+app\admin\services.py                   48      0     12      0   100%
+app\audit\__init__.py                    0      0      0      0   100%
+app\audit\routes.py                     15      0      0      0   100%
+app\audit\services.py                   26      0      6      0   100%
+app\auth\__init__.py                     0      0      0      0   100%
+app\auth\decorators.py                  21      0      6      0   100%
+app\auth\routes.py                     141     11     42      5    90%   68, 83-85, 89->91, 122-127, 170
+app\complaints\__init__.py               0      0      0      0   100%
+app\complaints\photos.py                75     11     20      2    82%   42, 51, 122-125, 131-135
+app\complaints\routes.py               151     16     42      4    89%   33, 48, 57->71, 65-68, 79-82, 226-229, 251, 255
+app\complaints\services.py              11      0      0      0   100%
+app\complaints\validation.py            19      0      8      0   100%
+app\config.py                           31      0      0      0   100%
+app\crypto.py                           28      2      4      2    88%   16, 19
+app\errors.py                           21      3      2      1    83%   19, 28, 32
+app\extensions.py                        8      0      0      0   100%
+app\feedback\__init__.py                 0      0      0      0   100%
+app\feedback\routes.py                  63      3     16      0    96%   80-83
+app\health.py                           13      0      0      0   100%
+app\models\__init__.py                   5      0      0      0   100%
+app\models\audit.py                     13      0      0      0   100%
+app\models\complaint.py                 54      0      0      0   100%
+app\models\notification.py              12      0      0      0   100%
+app\models\user.py                      42      1      0      0    98%   46
+app\notifications\__init__.py            0      0      0      0   100%
+app\notifications\routes.py             63      2     10      3    93%   65->68, 73, 97, 170->174
+app\notifications\services.py           66     28     16      2    54%   26-55, 66, 69, 116-120
+app\notifications\status_events.py       4      0      0      0   100%
+app\reporting\__init__.py                0      0      0      0   100%
+app\reporting\routes.py                 91      1     30      1    98%   19
+app\sanitize.py                          8      1      2      1    80%   11
+app\tls.py                               6      0      0      0   100%
+app\tracking\__init__.py                 0      0      0      0   100%
+app\tracking\routes.py                  68      2     16      1    96%   44, 128
+app\utils.py                             3      0      0      0   100%
+app\web\__init__.py                      0      0      0      0   100%
+app\web\routes.py                       35      0      0      0   100%
+--------------------------------------------------------------------------------
+TOTAL                                 1367     91    304     27    92%
+Coverage HTML written to dir docs/testing/evidence/htmlcov
+Coverage XML written to file docs/testing/evidence/coverage.xml
+Coverage JSON written to file docs/testing/evidence/coverage.json
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3FB7FC40>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3CAC6B60>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BE6B0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D4584AE30>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433BEB60>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D3D06A980>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\cheta\Smart-Complaint-Management-System\venv\Lib\site-packages\_pytest\unraisableexception.py:33: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x0000021D433125C0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+437 passed, 271 warnings in 29.39s
