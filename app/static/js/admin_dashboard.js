@@ -147,8 +147,10 @@
     $("assign-message").textContent = "";
     $("remarks-input").value = "";
     $("department-input").value = c.department || "";
-    $("assign-form").hidden = !isAdmin; // officers do not get assignment controls
-    $("reassign-form").hidden = !isAdmin || !c.assignedTo;
+    var assignable = ["Submitted", "In Review", "Assigned", "In Progress", "Reopened"]
+      .indexOf(c.status) !== -1;
+    $("assign-form").hidden = !isAdmin || !assignable || !!c.assignedTo;
+    $("reassign-form").hidden = !isAdmin || !assignable || !c.assignedTo;
     $("reassign-message").textContent = "";
     $("reassign-reason").value = "";
     $("reassign-department-input").value = c.department || "";

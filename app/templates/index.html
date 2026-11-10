@@ -27,3 +27,8 @@
     </section>
   </div>
 {% endblock %}
+{% block scripts %}
+  {% if request.path == '/' %}
+  <script src="{{ url_for('static', filename='js/entry.js') }}"></script>
+  {% endif %}
+{% endblock %}
