@@ -440,28 +440,8 @@ tbody tr:hover {
   background: #edf5ff;
 }
 
-.pager {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.8rem !important;
-  flex-wrap: wrap !important;
-  margin-top: 1rem !important;
-}
 
-.pager button,
-.pager .btn,
-.pager a {
-  min-width: 110px;
-}
 
-.pager span,
-.pager p,
-.pager strong {
-  margin: 0;
-  line-height: 1;
-  font-weight: 600;
-  color: var(--scms-primary-dark);
-}
 
 #register-form,
 #otp-form,
@@ -496,15 +476,7 @@ a:hover {
     padding: 0.7rem;
   }
 
-  .pager {
-    gap: 0.6rem !important;
-  }
 
-  .pager button,
-  .pager .btn,
-  .pager a {
-    min-width: 96px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -520,9 +492,6 @@ a:hover {
     justify-self: stretch;
   }
 
-  .pager {
-    justify-content: flex-start !important;
-  }
 }
 
 

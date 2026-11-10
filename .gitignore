@@ -12,3 +12,8 @@ uploads/
 .DS_Store
 certs/
 logs/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+test-results/
