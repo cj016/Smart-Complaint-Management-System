@@ -101,4 +101,9 @@
   button.addEventListener("click", search);
   input.addEventListener("keydown", function (e) { if (e.key === "Enter") { search(); } });
   warning.hidden = !!localStorage.getItem(TOKEN_KEY);
+  var fromList = new URLSearchParams(window.location.search).get("complaintId");
+  if (fromList && /^SCMS-\d{4}-\d{5}$/i.test(fromList.trim())) {
+    input.value = fromList.trim().toUpperCase();
+    search();
+  }
 })();
