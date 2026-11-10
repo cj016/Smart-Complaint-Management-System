@@ -1,0 +1,12 @@
+PASS: guest root redirects to shared login
+PASS: Admin login/dashboard/reports/feedback
+PASS: Citizen registration/OTP/login
+PASS: Citizen lodge/My Complaints/track
+PASS: Admin assigns complaint
+PASS: Officer can update only assigned complaint
+PASS: Citizen feedback/reopen/timeline
+PASS: Admin report CSV export
+
+PASSED 12 browser checks
+Evidence: C:\Users\cheta\Smart-Complaint-Management-System\docs\screenshots\sprint3-browser
+NOTE: These are smoke checks, not a substitute for the full Test Plan.
