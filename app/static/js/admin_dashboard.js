@@ -148,6 +148,10 @@
     $("remarks-input").value = "";
     $("department-input").value = c.department || "";
     $("assign-form").hidden = !isAdmin; // officers do not get assignment controls
+    $("reassign-form").hidden = !isAdmin || !c.assignedTo;
+    $("reassign-message").textContent = "";
+    $("reassign-reason").value = "";
+    $("reassign-department-input").value = c.department || "";
     fillStatusOptions(c);
     panel.hidden = false;
     panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -155,13 +159,16 @@
 
   function loadOfficers() {
     api("/officers").then(function (r) {
-      var select = $("officer-select");
       if (r.status !== 200) { return; }
-      r.body.items.forEach(function (o) {
-        var opt = document.createElement("option");
-        opt.value = o.id;
-        opt.textContent = o.name + (o.department ? " (" + o.department + ")" : "");
-        select.appendChild(opt);
+      ["officer-select", "reassign-officer-select"].forEach(function (id) {
+        var select = $(id);
+        select.replaceChildren();
+        r.body.items.forEach(function (o) {
+          var opt = document.createElement("option");
+          opt.value = o.id;
+          opt.textContent = o.name + (o.department ? " (" + o.department + ")" : "");
+          select.appendChild(opt);
+        });
       });
     });
   }
@@ -189,6 +196,45 @@
         out.textContent = errorText(r.body);
       }
     }).catch(function () { out.textContent = "Could not assign. Try again."; });
+  });
+
+  $("reassign-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    if (!isAdmin || !selected || !selected.assignedTo) { return; }
+    var out = $("reassign-message");
+    var reason = $("reassign-reason").value.trim();
+    if (!reason) { out.textContent = "Enter a reason for reassignment."; return; }
+    api("/complaints/" + encodeURIComponent(selected.complaintId) + "/reassign", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        officerId: Number($("reassign-officer-select").value),
+        department: $("reassign-department-input").value,
+        remarks: reason
+      })
+    }).then(function (r) {
+      if (r.status === 200) {
+        openPanel(r.body);
+        $("reassign-message").textContent = "Complaint reassigned successfully.";
+        load();
+      } else {
+        out.textContent = errorText(r.body);
+      }
+    }).catch(function () { out.textContent = "Could not reassign. Try again."; });
+  });
+
+  $("escalate-btn").addEventListener("click", function () {
+    if (!isAdmin) { return; }
+    var btn = $("escalate-btn"), out = $("escalate-message");
+    btn.disabled = true;
+    out.textContent = "Checking overdue complaints...";
+    api("/escalate-overdue", { method: "POST" }).then(function (r) {
+      if (r.status === 200) {
+        out.textContent = "Escalated " + r.body.escalatedCount + " overdue complaints.";
+        load();
+      } else { out.textContent = errorText(r.body); }
+    }).catch(function () { out.textContent = "Could not check overdue complaints."; })
+      .finally(function () { btn.disabled = false; });
   });
 
   $("status-form").addEventListener("submit", function (e) {
