@@ -101,6 +101,18 @@
       tr.appendChild(cell(submitted));
 
       var actions = document.createElement("td");
+      var view = document.createElement("a");
+      view.href = "/track?complaintId=" + encodeURIComponent(complaint.complaintId);
+      view.className = "btn btn-secondary action-link";
+      view.textContent = "Track";
+      actions.appendChild(view);
+      if (complaint.status === "Resolved") {
+        var rate = document.createElement("a");
+        rate.href = "/feedback?complaintId=" + encodeURIComponent(complaint.complaintId);
+        rate.className = "btn btn-secondary action-link";
+        rate.textContent = "Rate";
+        actions.appendChild(rate);
+      }
       if (complaint.status === "Resolved" || complaint.status === "Closed") {
         var reopenBtn = document.createElement("button");
         reopenBtn.type = "button";

@@ -10,6 +10,12 @@
   </div>
 
   <section id="dashboard-section" hidden>
+    <div id="admin-actions" data-roles="Admin" hidden>
+      <button id="escalate-btn" type="button" class="btn-secondary">
+        Check overdue complaints
+      </button>
+      <p id="escalate-message" role="status"></p>
+    </div>
     <div class="filter-bar">
       <div>
         <label for="category-filter">Category</label>
@@ -79,7 +85,7 @@
       </table>
     </div>
 
-    <div>
+    <div class="scms-pagination">
       <button id="prev-btn" type="button">Previous</button>
       <span id="page-info"></span>
       <button id="next-btn" type="button">Next</button>
@@ -96,6 +102,18 @@
         <input id="department-input" type="text" maxlength="100">
         <p id="assign-message" class="form-error" role="status"></p>
         <button id="assign-btn" type="submit">Assign</button>
+      </form>
+
+      <form id="reassign-form" hidden>
+        <h3>Reassign an existing complaint</h3>
+        <label for="reassign-officer-select">New officer</label>
+        <select id="reassign-officer-select" required></select>
+        <label for="reassign-department-input">New department (optional)</label>
+        <input id="reassign-department-input" maxlength="100">
+        <label for="reassign-reason">Reason for reassignment (required)</label>
+        <textarea id="reassign-reason" maxlength="2000" required></textarea>
+        <p id="reassign-message" role="status"></p>
+        <button type="submit">Reassign complaint</button>
       </form>
 
       <form id="status-form">

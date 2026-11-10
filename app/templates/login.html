@@ -1,17 +1,45 @@
 {% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% block title %}Sign in{% endblock %}
 {% block content %}
-  <h1>Login</h1>
-  <form id="login-form">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" required autocomplete="username">
-    <label for="password">Password</label>
-    <input id="password" name="password" type="password" required autocomplete="current-password">
-    <button type="submit">Log in</button>
-  </form>
-  <p id="message" role="status"></p>
-  <p>New here? <a href="/register">Create an account</a></p>
+  <section class="auth-shell" aria-labelledby="login-heading">
+    <div class="auth-heading">
+      <p class="eyebrow">Smart Complaint Management System</p>
+      <h1 id="login-heading">Welcome to SCMS</h1>
+      <p>Sign in to report a problem or manage civic complaints.</p>
+    </div>
+    <div class="card auth-card">
+      <div class="role-tabs" role="group" aria-label="Choose login type">
+        <button type="button" id="login-citizen" class="role-tab active"
+                aria-pressed="true">Citizen</button>
+        <button type="button" id="login-staff" class="role-tab"
+                aria-pressed="false">Admin / Officer</button>
+      </div>
+      <p id="role-hint" class="auth-hint">Use your registered Citizen account.</p>
+      <form id="login-form">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required
+               autocomplete="username" placeholder="you@example.com">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required
+               autocomplete="current-password">
+        <button type="submit" class="btn-wide" id="login-submit">Sign in securely</button>
+      </form>
+      <p id="message" role="status" aria-live="polite" class="auth-message"></p>
+      <p id="register-cta" class="auth-footer">
+        New citizen? <a href="/register">Create an account</a>
+      </p>
+    </div>
+    <section class="stack-summary" aria-label="Technology used">
+      <p class="stack-label">Built with</p>
+      <ul class="tech-stack">
+        <li>Python</li><li>Flask</li><li>SQLAlchemy</li>
+        <li>SQLite (local)</li><li>PostgreSQL-ready</li>
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+      </ul>
+    </section>
+  </section>
 {% endblock %}
 {% block scripts %}
   <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/login_mode.js') }}"></script>
 {% endblock %}

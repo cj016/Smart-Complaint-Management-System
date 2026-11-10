@@ -4,7 +4,8 @@ from ..utils import utcnow
 
 class AuditLog(db.Model):
     """Append-only, tamper-evident log (SCMS-SR-004).
-    entry_hash = hash(prev_hash + this row's content). Logic is added in Sprint 2.
+    entry_hash = hash(prev_hash + this row's content).
+    The hash chain is implemented in app/audit/services.py.
     """
     __tablename__ = "audit_log"
 

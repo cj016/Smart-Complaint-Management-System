@@ -58,7 +58,8 @@
     })
       .then(function (resp) {
         if (resp.status === 401) {
-          localStorage.removeItem(TOKEN_KEY);
+          SCMS.clear();
+          window.location.href = "/login?next=" + encodeURIComponent(window.location.pathname);
           warning.hidden = false;
           return null;
         }
@@ -85,5 +86,9 @@
       .then(function () { submitBtn.disabled = false; });
   });
 
+  if (SCMS.getToken() && SCMS.getRole() !== "Complainant") {
+    window.location.href = "/admin";
+    return;
+  }
   warning.hidden = !!localStorage.getItem(TOKEN_KEY);
 })();

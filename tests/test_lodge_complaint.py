@@ -13,7 +13,8 @@ VALID = {"category": "Sanitation", "description": "Overflowing garbage bin",
 
 @pytest.fixture()
 def citizen(app):
-    user = User(name="Asha", email="asha@example.com", password_hash="x")
+    user = User(name="Asha", email="asha@example.com", password_hash="x",
+                is_verified=True)
     db.session.add(user)
     db.session.commit()
     return user
