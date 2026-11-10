@@ -40,12 +40,6 @@ SCMS is a web application where citizens can register, lodge complaints and trac
 
 Open http://127.0.0.1:5000 in your browser.
 
-To generate a Fernet key, run:
-
-    python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
-
-Paste the generated value into `PII_ENCRYPTION_KEY` in `.env`. Keep `.env` private.
-
 For a local demo Admin account, run:
 
     python scripts/configure_local_admin.py
