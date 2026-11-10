@@ -62,7 +62,7 @@ var SCMS = (function () {
     if (out) { out.addEventListener("click", function (e) { e.preventDefault(); logout(); }); }
   }
   document.addEventListener("DOMContentLoaded", applyNav);
-    function requireRole(roles) {
+  function requireRole(roles) {
     if (!getToken()) {
       window.location.href = "/login?next=" + encodeURIComponent(window.location.pathname);
       return false;

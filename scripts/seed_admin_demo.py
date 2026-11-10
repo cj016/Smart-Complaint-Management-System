@@ -2,8 +2,7 @@
 
 Run from the repo root with the venv active:   python scripts/seed_admin_demo.py
 Safe to run more than once: users and complaints are only created if missing.
-Prints admin and officer tokens (JWT) to paste into the browser, because the login page
-(SCMS-F-002) is another teammate's item.
+Use the normal login page after creating the demo accounts.
 """
 import os
 import sys

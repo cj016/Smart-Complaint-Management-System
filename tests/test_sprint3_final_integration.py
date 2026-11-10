@@ -1,9 +1,9 @@
-from pathlib import Path
-
 """Final Sprint 3 site-shell smoke and permission regression tests.
 
 These are Flask test-client checks; a real browser test is separately required.
 """
+
+from pathlib import Path
 import pytest
 from app.extensions import db
 from app.models import Role, User
