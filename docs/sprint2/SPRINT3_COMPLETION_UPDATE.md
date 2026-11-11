@@ -1,9 +1,9 @@
 # Sprint 3 Completion Update for Issue #30
 
-**Verified date:** 2026-11-11  
-**Documentation PR:** #101  
-**Merged functional correction:** PR #102  
-**Integrated main base:** `c9c83de`  
+- **Verified date:** 2026-11-11
+- **Documentation PR:** #101
+- **Merged functional correction:** PR #102
+- **Integrated main base:** `c9c83de`
 **Documentation branch HEAD at verification:** `e01e25c`
 
 ## Scope of the correction
