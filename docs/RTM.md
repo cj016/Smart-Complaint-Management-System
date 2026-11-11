@@ -4,7 +4,7 @@ Replaces the status column of SRS section 8 (see docs/DEVIATIONS.md). Generated 
 
 Status: **N** = not tested, **P** = passed, **F** = a mapped test failed, **A** = tested and approved (set by the QA Lead after sign-off).
 
-Last run: 2026-11-09. Full suite: `411 passed in 21.82s`. Requirements: 23 passed, 0 failed, 10 not tested (of 33).
+Last run: 2026-11-11. Full suite: `437 passed in 19.95s`. Requirements: 23 passed, 0 failed, 10 not tested (of 33).
 
 | Req ID | Requirement (short) | Test case(s) | Status | Comments / evidence |
 |---|---|---|---|---|

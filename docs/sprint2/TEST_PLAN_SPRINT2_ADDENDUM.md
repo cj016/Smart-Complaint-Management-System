@@ -1,5 +1,7 @@
 # SCMS Software Test Plan v1.0 - Sprint 2 test evidence addendum
 
+**Latest integrated run (2026-11-11):** **437 passed in 19.21s**; Flake8 passed; RTM generator reported **23 P / 0 F / 10 N** and 437 tests passed in 18.29s. Earlier 411-test results below are retained as a dated Sprint 2 baseline, not the latest result. QA/UAT sign-off is not implied. See [SPRINT3_COMPLETION_UPDATE.md](SPRINT3_COMPLETION_UPDATE.md).
+
 **Issue:** #30 (T-04) | **Status:** integrated automated testing passed; manual acceptance and QA sign-off pending
 
 ## Basis
@@ -51,3 +53,23 @@ git diff --check
 - **Document preservation:** The original submitted PDFs remain unchanged; deviations are recorded separately.
 
 **Evidence limitation:** Prior feature-branch browser checks were developer-reported, not a signed combined UAT record.
+
+
+## Sprint 3 regression coverage (post-integration)
+
+- `tests/test_sprint3_citizen.py` covers citizen-only submission,
+  role-based rejection, retained resolution history, fresh SLA deadline,
+  and notification failure isolation.
+- The integrated `python -m pytest -q` result on the updated documentation
+  branch was **437 passed in 19.21s**. Flake8 reported no errors.
+- The generated `docs/RTM.md` reported **23 P, 0 F, 10 N**; the three
+  Sprint 2 feature requirements remain `P`, not QA-signed `A`.
+- Developer-reported browser checks include Citizen lodging/tracking,
+  Admin/Officer denial (HTTP 403), reopening, duplicate denial (409),
+  notification inboxes, and expired-session login redirects. Screenshots
+  shared outside the repository are not claimed as committed UAT evidence.
+- The repository also includes `docs/testing/` reports and
+  `docs/screenshots/sprint3-browser/` evidence from other team workflows.
+  Refer to those artifacts rather than replacing or restating their metrics.
+- Keep any remaining photo rejection, edge-case authorization, mobile
+  layout, and independent QA review status explicit until verified.

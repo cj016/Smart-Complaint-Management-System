@@ -1,5 +1,7 @@
 # Sprint 2 Integrated Test Results
 
+**LATEST post-Sprint 3 verification (2026-11-11):** On the documentation branch after integrating `origin/main` (`c9c83de`, merge HEAD `e01e25c`): `python -m pytest -q` **437 passed in 19.21s**; `python -m flake8 .` passed; `python scripts/generate_rtm.py` **23 P / 0 F / 10 N**, full suite **437 passed in 18.29s**. The older 411-test results below remain historical Sprint 2 evidence. Manual UAT and QA sign-off are not established by these commands.
+
 ## Verification date and revision
 
 - Date: 9 November 2026

@@ -1,5 +1,7 @@
 # Sprint 2 Requirements Traceability Supplement
 
+**Latest regenerated matrix (2026-11-11):** **23 P, 0 F, 10 N**, with **437 passed** in the full suite. F024, F041 and F042 remain **P**. The dated 411-test entry below is historical; `docs/RTM.md` is authoritative. No `A` status is claimed without QA sign-off.
+
 **Important:** This is a supplement to SRS Section 8 and the repository's `docs/RTM.md`, **not** an overwrite of its generated statuses.
 
 | Requirement | Original SRS test ID | Implementation / PR | Automated test mapping | Historical feature-branch evidence | Integrated automated status | QA approval |

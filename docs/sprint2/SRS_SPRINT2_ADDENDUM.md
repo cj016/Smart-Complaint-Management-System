@@ -1,5 +1,7 @@
 # SCMS SRS v1.0 - Sprint 2 implemented addendum
 
+**Post-Sprint 3 update (2026-11-11):** PR #102 is merged; SCMS-F-010 is Citizen-only and SCMS-F-024 now retains prior resolution remarks and resets SLA on reopening. Latest integrated suite: **437 passed**. See [SPRINT3_COMPLETION_UPDATE.md](SPRINT3_COMPLETION_UPDATE.md); QA approval is separate.
+
 **Issue:** #30 (T-04) | **Status:** merged and integration-tested; QA approval pending
 
 ## Purpose and cross-reference
@@ -13,7 +15,7 @@ This addendum expands the existing requirements in the submitted SRS v1.0, **Sec
 - Citizen can request reopening only for a complaint they own and whose current status is `Resolved` or `Closed`.
 - Reopening reason is mandatory (nonblank), at most 2,000 characters in this implementation.
 - On success the current status becomes `Reopened`; a timestamped `StatusHistory` entry with the reason and actor is created, and an audit action is recorded.
-- The previously recorded resolution timestamp and remarks are cleared for the new work cycle.
+- Reopening clears the previous resolution timestamp (`resolved_at`), but preserves the prior `resolution_remarks` until a new resolution replaces them. A fresh priority-based SLA deadline (`sla_due_at`) is set for the new work cycle.
 - An in-app notification is generated for the assigned Officer (if any) and Admin account(s). Staff can view their in-app notifications in a staff inbox.
 - Repeated reopening and reopening from any other status are rejected. Requests for complaints not owned by the citizen are not disclosed (404 response).
 - The Citizen's My Complaints page offers the reopening action when eligible; tracking timeline shows the new status event.

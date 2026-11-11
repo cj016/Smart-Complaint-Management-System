@@ -1,5 +1,7 @@
 # SCMS Sprint 2 Documentation Updates
 
+**Latest integrated verification (2026-11-11):** 437 pytest tests passed; Flake8 passed; generated RTM **23 P / 0 F / 10 N**. This includes merged Sprint 3 changes. See [SPRINT3_COMPLETION_UPDATE.md](SPRINT3_COMPLETION_UPDATE.md). The older 411-test figures in historical Sprint 2 evidence remain as dated baselines, not latest results.
+
 ## Issue
 T-04 — Documentation Updates (#30)
 

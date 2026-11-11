@@ -1,5 +1,7 @@
 # SCMS SAD v1.0 - Sprint 2 implemented architecture/API addendum
 
+**Post-Sprint 3 update (2026-11-11):** This addendum now reflects merged PR #102 (Citizen-only lodging, preserved reopen remarks, fresh SLA, best-effort notifications and session cleanup). See [SPRINT3_COMPLETION_UPDATE.md](SPRINT3_COMPLETION_UPDATE.md).
+
 **Issue:** #30 (T-04) | **Status:** merged and automated integration-tested; QA review pending
 
 ## Reference
@@ -43,3 +45,24 @@ The **date range filters submission timestamps** (`Complaint.created_at`). The t
 ## Integration/architecture limitations
 
 PRs #97, #98 and #99 are merged. The integrated documentation branch passed 411 automated tests and Flake8 on 9 November 2026. These results do not replace combined manual browser UAT. Staff notifications use existing delivery integrations when configured; external email/SMS delivery was not demonstrated by this evidence. Deployment TLS, load targets, and QA sign-off remain outside this automated verification.
+
+
+## Sprint 3 implementation correction (PR #102)
+
+- **SCMS-F-010:** `POST /api/v1/complaints` is protected by the
+  `Complainant` role requirement. Authenticated Admin and Officer requests
+  return HTTP 403. The Citizen Lodge page also redirects logged-in staff
+  users away from the Citizen form.
+- **SCMS-F-024:** A successful reopen sets `status=Reopened`, clears
+  `resolved_at`, preserves existing `resolution_remarks` for context, and
+  sets a new `sla_due_at` using the configured priority SLA duration.
+  The new reopening reason is recorded in status history.
+- **Delivery failure isolation:** Staff notification creation is attempted
+  after the reopening transaction is committed. A notification exception is
+  logged without turning the committed reopen into a false error response.
+- **Session cleanup:** On an unauthorized Lodge/Track API response, the
+  Citizen pages clear stored session state and redirect to Login.
+- **No database migration** was introduced for this correction.
+
+These details supersede any earlier design assumption that reopening erases
+previous `resolution_remarks`. See `SPRINT3_COMPLETION_UPDATE.md`.
